@@ -1,6 +1,6 @@
 # PIR-HCM: home-cage activity monitoring from the analog signal of a commercial PIR sensor
 
-> **DRAFT (2026-09-24, for v1.0.0).** Items marked `TODO` (the copyright holder, the repository URL, the Zenodo DOI and two package versions) must be resolved before the first public release.
+> **DRAFT (2026-09-28, for v1.0.0).** Items marked `TODO` (the copyright holder, the article DOI and two package versions) must be resolved before the first public release.
 
 This repository accompanies the article:
 
@@ -120,7 +120,9 @@ are made public upon acceptance of the article.
 
 ## 6. Citation
 
-See `CITATION.cff`. Please cite the article and the Zenodo archive (DOI: TODO).
+See `CITATION.cff`. Please cite the article and the Zenodo archive (DOI: [10.5281/zenodo.23008577](https://doi.org/10.5281/zenodo.23008577)).
+
+Source repository: <https://github.com/RyoFurukawa8/pir-hcm>
 
 ## 6.1 Funding
 

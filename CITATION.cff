@@ -9,10 +9,10 @@ authors:
   - family-names: Kume
     given-names: Kazuhiko
 version: "1.0.0"
-doi: "10.5281/zenodo.TODO"
+doi: "10.5281/zenodo.23008577"
 date-released: "2026-TODO"
 license: MIT
-repository-code: "https://github.com/TODO/pir-hcm"
+repository-code: "https://github.com/RyoFurukawa8/pir-hcm"
 preferred-citation:
   type: article
   title: "Non-invasive active/rest classification and continuous graded activity quantification in mice using analog passive-infrared sensing and unsupervised Gaussian mixture modelling"
