@@ -1,0 +1,2 @@
+﻿good_cut,lomo_threshold,threshold_source,n_fold_used,n_good_ch,n_bad_ch,n_pass_ch,n_pass_mice,PPV,sensitivity,specificity,par_auc,f1_qc_post
+0.7,0.2851837343959558,lomo,8,13,19,15,7,0.8,0.9230769230769232,0.8421052631578947,0.923076923076923,0.7714837368907113

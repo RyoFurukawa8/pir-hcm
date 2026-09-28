@@ -1,0 +1,2 @@
+﻿sensor_calibration_constant_within_sensor,note,good_cut
+1,empty_box_mu and noise_sigma are sensor-level calibration constants; do not use them as record-level explanatory variables.,0.7

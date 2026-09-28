@@ -1,0 +1,385 @@
+﻿ch,mouse_id,band,metric,value,good_cut
+260626_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1,0.7384020618556701,0.7
+260626_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1,0.7530235518777848,0.7
+260626_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1,0.5393939393939394,0.7
+260626_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1,0.8498896247240618,0.7
+260626_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1,0.7000859352621025,0.7
+260626_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1,0.8298109010011123,0.7
+260626_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1,0.6344827586206897,0.7
+260626_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1,0.6308880308880309,0.7
+260629_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1,0.8522669383596536,0.7
+260629_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1,0.7889137737961927,0.7
+260629_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1,0.4889550757011665,0.7
+260629_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1,0.5634266886326195,0.7
+260629_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1,0.6775510204081633,0.7
+260629_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1,0.7856160345843978,0.7
+260629_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1,0.57672170761176,0.7
+260629_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1,0.8681257014590348,0.7
+260702_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1,0.5683971201212581,0.7
+260702_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1,0.5067406819984139,0.7
+260702_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1,0.6842613453492115,0.7
+260702_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1,0.5852112676056338,0.7
+260702_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1,0.6558861578266494,0.7
+260702_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1,0.5349414686058886,0.7
+260702_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1,0.6915113871635611,0.7
+260702_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1,0.7395561357702349,0.7
+260706_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1,0.6156843643448612,0.7
+260706_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1,0.7770777077707771,0.7
+260706_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1,0.5788113695090439,0.7
+260706_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1,0.6351152525747915,0.7
+260706_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1,0.6208768267223382,0.7
+260706_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1,0.6349312772376802,0.7
+260706_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1,0.5474088291746642,0.7
+260706_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1,0.777097366809553,0.7
+260626_ch1,mouse_5,Mid-Band (1-2Hz),state_f1,0.516,0.7
+260626_ch2,mouse_5,Mid-Band (1-2Hz),state_f1,0.3351449275362319,0.7
+260626_ch3,mouse_6,Mid-Band (1-2Hz),state_f1,0.4812153561896941,0.7
+260626_ch4,mouse_6,Mid-Band (1-2Hz),state_f1,0.4483870967741935,0.7
+260626_ch5,mouse_7,Mid-Band (1-2Hz),state_f1,0.4404973357015986,0.7
+260626_ch6,mouse_7,Mid-Band (1-2Hz),state_f1,0.4889397406559878,0.7
+260626_ch7,mouse_8,Mid-Band (1-2Hz),state_f1,0.3422756706753006,0.7
+260626_ch8,mouse_8,Mid-Band (1-2Hz),state_f1,0.6195949644225506,0.7
+260629_ch1,mouse_1,Mid-Band (1-2Hz),state_f1,0.3109278350515463,0.7
+260629_ch2,mouse_1,Mid-Band (1-2Hz),state_f1,0.3618130766145206,0.7
+260629_ch3,mouse_2,Mid-Band (1-2Hz),state_f1,0.3893442622950819,0.7
+260629_ch4,mouse_2,Mid-Band (1-2Hz),state_f1,0.3384530992868897,0.7
+260629_ch5,mouse_3,Mid-Band (1-2Hz),state_f1,0.492364990689013,0.7
+260629_ch6,mouse_3,Mid-Band (1-2Hz),state_f1,0.7857704402515723,0.7
+260629_ch7,mouse_4,Mid-Band (1-2Hz),state_f1,0.2843419788664745,0.7
+260629_ch8,mouse_4,Mid-Band (1-2Hz),state_f1,0.5162653147444022,0.7
+260702_ch1,mouse_5,Mid-Band (1-2Hz),state_f1,0.3843171046962516,0.7
+260702_ch2,mouse_5,Mid-Band (1-2Hz),state_f1,0.6555438225976769,0.7
+260702_ch3,mouse_6,Mid-Band (1-2Hz),state_f1,0.3969465648854962,0.7
+260702_ch4,mouse_6,Mid-Band (1-2Hz),state_f1,0.390637610976594,0.7
+260702_ch5,mouse_7,Mid-Band (1-2Hz),state_f1,0.4012490241998439,0.7
+260702_ch6,mouse_7,Mid-Band (1-2Hz),state_f1,0.2673434856175973,0.7
+260702_ch7,mouse_8,Mid-Band (1-2Hz),state_f1,0.2919369786839666,0.7
+260702_ch8,mouse_8,Mid-Band (1-2Hz),state_f1,0.5386138613861386,0.7
+260706_ch1,mouse_1,Mid-Band (1-2Hz),state_f1,0.6156843643448612,0.7
+260706_ch2,mouse_1,Mid-Band (1-2Hz),state_f1,0.3720136518771331,0.7
+260706_ch3,mouse_2,Mid-Band (1-2Hz),state_f1,0.3617539585870889,0.7
+260706_ch4,mouse_2,Mid-Band (1-2Hz),state_f1,0.3440860215053763,0.7
+260706_ch5,mouse_3,Mid-Band (1-2Hz),state_f1,0.5632995147772386,0.7
+260706_ch6,mouse_3,Mid-Band (1-2Hz),state_f1,0.4458991143627262,0.7
+260706_ch7,mouse_4,Mid-Band (1-2Hz),state_f1,0.2649955237242614,0.7
+260706_ch8,mouse_4,Mid-Band (1-2Hz),state_f1,0.3974413646055437,0.7
+260626_ch1,mouse_5,Mid-Band (2-5Hz),state_f1,0.6303148328464784,0.7
+260626_ch2,mouse_5,Mid-Band (2-5Hz),state_f1,0.3550579768092763,0.7
+260626_ch3,mouse_6,Mid-Band (2-5Hz),state_f1,0.6032639279684862,0.7
+260626_ch4,mouse_6,Mid-Band (2-5Hz),state_f1,0.3480696139227845,0.7
+260626_ch5,mouse_7,Mid-Band (2-5Hz),state_f1,0.1200883002207505,0.7
+260626_ch6,mouse_7,Mid-Band (2-5Hz),state_f1,0.2565674255691769,0.7
+260626_ch7,mouse_8,Mid-Band (2-5Hz),state_f1,0.3445190156599552,0.7
+260626_ch8,mouse_8,Mid-Band (2-5Hz),state_f1,0.6133746678476528,0.7
+260629_ch1,mouse_1,Mid-Band (2-5Hz),state_f1,0.6865123116501286,0.7
+260629_ch2,mouse_1,Mid-Band (2-5Hz),state_f1,0.2416760194537972,0.7
+260629_ch3,mouse_2,Mid-Band (2-5Hz),state_f1,0.5936952714535902,0.7
+260629_ch4,mouse_2,Mid-Band (2-5Hz),state_f1,0.6223350253807106,0.7
+260629_ch5,mouse_3,Mid-Band (2-5Hz),state_f1,0.4078997341435624,0.7
+260629_ch6,mouse_3,Mid-Band (2-5Hz),state_f1,0.7857704402515723,0.7
+260629_ch7,mouse_4,Mid-Band (2-5Hz),state_f1,0.2994604316546763,0.7
+260629_ch8,mouse_4,Mid-Band (2-5Hz),state_f1,0.6095757103931491,0.7
+260702_ch1,mouse_5,Mid-Band (2-5Hz),state_f1,0.6276974649067673,0.7
+260702_ch2,mouse_5,Mid-Band (2-5Hz),state_f1,0.6503394762366634,0.7
+260702_ch3,mouse_6,Mid-Band (2-5Hz),state_f1,0.6535152151101784,0.7
+260702_ch4,mouse_6,Mid-Band (2-5Hz),state_f1,0.632069970845481,0.7
+260702_ch5,mouse_7,Mid-Band (2-5Hz),state_f1,0.557204923968139,0.7
+260702_ch6,mouse_7,Mid-Band (2-5Hz),state_f1,0.606852702225362,0.7
+260702_ch7,mouse_8,Mid-Band (2-5Hz),state_f1,0.3192233009708738,0.7
+260702_ch8,mouse_8,Mid-Band (2-5Hz),state_f1,0.2354066985645933,0.7
+260706_ch1,mouse_1,Mid-Band (2-5Hz),state_f1,0.6156843643448612,0.7
+260706_ch2,mouse_1,Mid-Band (2-5Hz),state_f1,0.0789873417721519,0.7
+260706_ch3,mouse_2,Mid-Band (2-5Hz),state_f1,0.6581856100104275,0.7
+260706_ch4,mouse_2,Mid-Band (2-5Hz),state_f1,0.7057216573076339,0.7
+260706_ch5,mouse_3,Mid-Band (2-5Hz),state_f1,0.4858971320218061,0.7
+260706_ch6,mouse_3,Mid-Band (2-5Hz),state_f1,0.6163099239341943,0.7
+260706_ch7,mouse_4,Mid-Band (2-5Hz),state_f1,0.3140693503387804,0.7
+260706_ch8,mouse_4,Mid-Band (2-5Hz),state_f1,0.1547445255474452,0.7
+260626_ch1,mouse_5,High-Pass (>5Hz),state_f1,0.5758754863813229,0.7
+260626_ch2,mouse_5,High-Pass (>5Hz),state_f1,0.3474559876184949,0.7
+260626_ch3,mouse_6,High-Pass (>5Hz),state_f1,0.6031042128603105,0.7
+260626_ch4,mouse_6,High-Pass (>5Hz),state_f1,0.2458776873304111,0.7
+260626_ch5,mouse_7,High-Pass (>5Hz),state_f1,0.0732600732600732,0.7
+260626_ch6,mouse_7,High-Pass (>5Hz),state_f1,0.6564543246777508,0.7
+260626_ch7,mouse_8,High-Pass (>5Hz),state_f1,0.3465959328028293,0.7
+260626_ch8,mouse_8,High-Pass (>5Hz),state_f1,0.6097828471155955,0.7
+260629_ch1,mouse_1,High-Pass (>5Hz),state_f1,0.7087011349306431,0.7
+260629_ch2,mouse_1,High-Pass (>5Hz),state_f1,0.6029438488097402,0.7
+260629_ch3,mouse_2,High-Pass (>5Hz),state_f1,0.5095255883451625,0.7
+260629_ch4,mouse_2,High-Pass (>5Hz),state_f1,0.5669673837612769,0.7
+260629_ch5,mouse_3,High-Pass (>5Hz),state_f1,0.6867191115224434,0.7
+260629_ch6,mouse_3,High-Pass (>5Hz),state_f1,0.7857704402515723,0.7
+260629_ch7,mouse_4,High-Pass (>5Hz),state_f1,0.3071364046973803,0.7
+260629_ch8,mouse_4,High-Pass (>5Hz),state_f1,0.7640594699418228,0.7
+260702_ch1,mouse_5,High-Pass (>5Hz),state_f1,0.6193631117760205,0.7
+260702_ch2,mouse_5,High-Pass (>5Hz),state_f1,0.6548076923076923,0.7
+260702_ch3,mouse_6,High-Pass (>5Hz),state_f1,0.6505085479333478,0.7
+260702_ch4,mouse_6,High-Pass (>5Hz),state_f1,0.615830915872358,0.7
+260702_ch5,mouse_7,High-Pass (>5Hz),state_f1,0.4804075235109717,0.7
+260702_ch6,mouse_7,High-Pass (>5Hz),state_f1,0.6232059484696524,0.7
+260702_ch7,mouse_8,High-Pass (>5Hz),state_f1,0.512497185318622,0.7
+260702_ch8,mouse_8,High-Pass (>5Hz),state_f1,0.5587506197322757,0.7
+260706_ch1,mouse_1,High-Pass (>5Hz),state_f1,0.6156843643448612,0.7
+260706_ch2,mouse_1,High-Pass (>5Hz),state_f1,0.2703751617076326,0.7
+260706_ch3,mouse_2,High-Pass (>5Hz),state_f1,0.6611295681063123,0.7
+260706_ch4,mouse_2,High-Pass (>5Hz),state_f1,0.5261845386533666,0.7
+260706_ch5,mouse_3,High-Pass (>5Hz),state_f1,0.2852584556477345,0.7
+260706_ch6,mouse_3,High-Pass (>5Hz),state_f1,0.6747638326585695,0.7
+260706_ch7,mouse_4,High-Pass (>5Hz),state_f1,0.3286949981195938,0.7
+260706_ch8,mouse_4,High-Pass (>5Hz),state_f1,0.6023380225876759,0.7
+260626_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1981363413437959,0.7
+260626_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1766749379652605,0.7
+260626_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.0010405827263267,0.7
+260626_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2848214285714285,0.7
+260626_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3186274509803921,0.7
+260626_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3915515840779854,0.7
+260626_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2581926514399205,0.7
+260626_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2761670761670761,0.7
+260629_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1752346893160482,0.7
+260629_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2065026362038664,0.7
+260629_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1707538601271571,0.7
+260629_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2441150828247602,0.7
+260629_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3383983572895277,0.7
+260629_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1700587969244685,0.7
+260629_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2129393785022924,0.7
+260629_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2803921568627451,0.7
+260702_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3574244415243101,0.7
+260702_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1012658227848101,0.7
+260702_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.275832252485949,0.7
+260702_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2920770877944325,0.7
+260702_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.339683826509931,0.7
+260702_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2919099249374479,0.7
+260702_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3237835379718053,0.7
+260702_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.3697478991596639,0.7
+260706_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2353488372093023,0.7
+260706_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.225444340505145,0.7
+260706_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.0969568294409058,0.7
+260706_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2220753469927296,0.7
+260706_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.0699763593380614,0.7
+260706_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.2854715378079864,0.7
+260706_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1934552454282964,0.7
+260706_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",state_f1_rawband,0.1598039215686274,0.7
+260626_ch1,mouse_5,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch2,mouse_5,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch3,mouse_6,Mid-Band (1-2Hz),state_f1_rawband,0.0010405827263267,0.7
+260626_ch4,mouse_6,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch5,mouse_7,Mid-Band (1-2Hz),state_f1_rawband,0.042267050912584,0.7
+260626_ch6,mouse_7,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch7,mouse_8,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch8,mouse_8,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch1,mouse_1,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch2,mouse_1,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch3,mouse_2,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch4,mouse_2,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch5,mouse_3,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch6,mouse_3,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch7,mouse_4,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260629_ch8,mouse_4,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch1,mouse_5,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch2,mouse_5,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch3,mouse_6,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch4,mouse_6,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch5,mouse_7,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch6,mouse_7,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch7,mouse_8,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260702_ch8,mouse_8,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch1,mouse_1,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch2,mouse_1,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch3,mouse_2,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch4,mouse_2,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch5,mouse_3,Mid-Band (1-2Hz),state_f1_rawband,0.0019675356615838,0.7
+260706_ch6,mouse_3,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch7,mouse_4,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260706_ch8,mouse_4,Mid-Band (1-2Hz),state_f1_rawband,0.0,0.7
+260626_ch1,mouse_5,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260626_ch2,mouse_5,Mid-Band (2-5Hz),state_f1_rawband,0.5967191814195225,0.7
+260626_ch3,mouse_6,Mid-Band (2-5Hz),state_f1_rawband,0.0010405827263267,0.7
+260626_ch4,mouse_6,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260626_ch5,mouse_7,Mid-Band (2-5Hz),state_f1_rawband,0.0441670667306769,0.7
+260626_ch6,mouse_7,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260626_ch7,mouse_8,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260626_ch8,mouse_8,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch1,mouse_1,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch2,mouse_1,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch3,mouse_2,Mid-Band (2-5Hz),state_f1_rawband,0.8230486309767062,0.7
+260629_ch4,mouse_2,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch5,mouse_3,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch6,mouse_3,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch7,mouse_4,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260629_ch8,mouse_4,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch1,mouse_5,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch2,mouse_5,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch3,mouse_6,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch4,mouse_6,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch5,mouse_7,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch6,mouse_7,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch7,mouse_8,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260702_ch8,mouse_8,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch1,mouse_1,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch2,mouse_1,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch3,mouse_2,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch4,mouse_2,Mid-Band (2-5Hz),state_f1_rawband,0.7686151207660425,0.7
+260706_ch5,mouse_3,Mid-Band (2-5Hz),state_f1_rawband,0.0029527559055118,0.7
+260706_ch6,mouse_3,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch7,mouse_4,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260706_ch8,mouse_4,Mid-Band (2-5Hz),state_f1_rawband,0.0,0.7
+260626_ch1,mouse_5,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260626_ch2,mouse_5,High-Pass (>5Hz),state_f1_rawband,0.5967191814195225,0.7
+260626_ch3,mouse_6,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260626_ch4,mouse_6,High-Pass (>5Hz),state_f1_rawband,0.615606473321583,0.7
+260626_ch5,mouse_7,High-Pass (>5Hz),state_f1_rawband,0.0460652591170825,0.7
+260626_ch6,mouse_7,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260626_ch7,mouse_8,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260626_ch8,mouse_8,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260629_ch1,mouse_1,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260629_ch2,mouse_1,High-Pass (>5Hz),state_f1_rawband,0.6417229995283761,0.7
+260629_ch3,mouse_2,High-Pass (>5Hz),state_f1_rawband,0.8230486309767062,0.7
+260629_ch4,mouse_2,High-Pass (>5Hz),state_f1_rawband,0.8230486309767062,0.7
+260629_ch5,mouse_3,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260629_ch6,mouse_3,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260629_ch7,mouse_4,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260629_ch8,mouse_4,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch1,mouse_5,High-Pass (>5Hz),state_f1_rawband,0.6053268765133172,0.7
+260702_ch2,mouse_5,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch3,mouse_6,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch4,mouse_6,High-Pass (>5Hz),state_f1_rawband,0.6316122901488755,0.7
+260702_ch5,mouse_7,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch6,mouse_7,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch7,mouse_8,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260702_ch8,mouse_8,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260706_ch1,mouse_1,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260706_ch2,mouse_1,High-Pass (>5Hz),state_f1_rawband,0.6114423851732473,0.7
+260706_ch3,mouse_2,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260706_ch4,mouse_2,High-Pass (>5Hz),state_f1_rawband,0.7686151207660425,0.7
+260706_ch5,mouse_3,High-Pass (>5Hz),state_f1_rawband,0.0029542097488921,0.7
+260706_ch6,mouse_3,High-Pass (>5Hz),state_f1_rawband,0.6380018969332911,0.7
+260706_ch7,mouse_4,High-Pass (>5Hz),state_f1_rawband,0.0,0.7
+260706_ch8,mouse_4,High-Pass (>5Hz),state_f1_rawband,0.6069523039611965,0.7
+260626_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",intensity_r,0.9348268846261826,0.7
+260626_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",intensity_r,0.9377764958113282,0.7
+260626_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",intensity_r,0.8966300522153464,0.7
+260626_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",intensity_r,0.9382994863540932,0.7
+260626_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",intensity_r,0.9322795264846768,0.7
+260626_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",intensity_r,0.9418527928359144,0.7
+260626_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",intensity_r,0.9119095982427432,0.7
+260626_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",intensity_r,0.9078040954301896,0.7
+260629_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",intensity_r,0.952801555573301,0.7
+260629_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",intensity_r,0.9409891486343884,0.7
+260629_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",intensity_r,0.9189112419351732,0.7
+260629_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",intensity_r,0.9301322755558222,0.7
+260629_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",intensity_r,0.93083330852739,0.7
+260629_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",intensity_r,0.9429209713615893,0.7
+260629_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",intensity_r,0.9131632015722596,0.7
+260629_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",intensity_r,0.9457550246457752,0.7
+260702_ch1,mouse_5,"Low-Pass (<=1Hz, B0)",intensity_r,0.9192943027064284,0.7
+260702_ch2,mouse_5,"Low-Pass (<=1Hz, B0)",intensity_r,0.8921336873287731,0.7
+260702_ch3,mouse_6,"Low-Pass (<=1Hz, B0)",intensity_r,0.9206592921055752,0.7
+260702_ch4,mouse_6,"Low-Pass (<=1Hz, B0)",intensity_r,0.9199058024607712,0.7
+260702_ch5,mouse_7,"Low-Pass (<=1Hz, B0)",intensity_r,0.9252642614940336,0.7
+260702_ch6,mouse_7,"Low-Pass (<=1Hz, B0)",intensity_r,0.9063119601149028,0.7
+260702_ch7,mouse_8,"Low-Pass (<=1Hz, B0)",intensity_r,0.9116640457848476,0.7
+260702_ch8,mouse_8,"Low-Pass (<=1Hz, B0)",intensity_r,0.9227929527544292,0.7
+260706_ch1,mouse_1,"Low-Pass (<=1Hz, B0)",intensity_r,0.9439632677051376,0.7
+260706_ch2,mouse_1,"Low-Pass (<=1Hz, B0)",intensity_r,0.9395138603336032,0.7
+260706_ch3,mouse_2,"Low-Pass (<=1Hz, B0)",intensity_r,0.9246450312080892,0.7
+260706_ch4,mouse_2,"Low-Pass (<=1Hz, B0)",intensity_r,0.9240786527177972,0.7
+260706_ch5,mouse_3,"Low-Pass (<=1Hz, B0)",intensity_r,0.6645067237890908,0.7
+260706_ch6,mouse_3,"Low-Pass (<=1Hz, B0)",intensity_r,0.9402459773235052,0.7
+260706_ch7,mouse_4,"Low-Pass (<=1Hz, B0)",intensity_r,0.926517959028354,0.7
+260706_ch8,mouse_4,"Low-Pass (<=1Hz, B0)",intensity_r,0.9121915579019008,0.7
+260626_ch1,mouse_5,Mid-Band (1-2Hz),intensity_r,0.8805190178473987,0.7
+260626_ch2,mouse_5,Mid-Band (1-2Hz),intensity_r,0.7758075188698005,0.7
+260626_ch3,mouse_6,Mid-Band (1-2Hz),intensity_r,0.7584997482901751,0.7
+260626_ch4,mouse_6,Mid-Band (1-2Hz),intensity_r,0.7760553234925716,0.7
+260626_ch5,mouse_7,Mid-Band (1-2Hz),intensity_r,0.8388369360847042,0.7
+260626_ch6,mouse_7,Mid-Band (1-2Hz),intensity_r,0.8908698364010511,0.7
+260626_ch7,mouse_8,Mid-Band (1-2Hz),intensity_r,0.7113819359336269,0.7
+260626_ch8,mouse_8,Mid-Band (1-2Hz),intensity_r,0.8452075580635625,0.7
+260629_ch1,mouse_1,Mid-Band (1-2Hz),intensity_r,0.8986150171272178,0.7
+260629_ch2,mouse_1,Mid-Band (1-2Hz),intensity_r,0.8026679946103388,0.7
+260629_ch3,mouse_2,Mid-Band (1-2Hz),intensity_r,0.8451966370466666,0.7
+260629_ch4,mouse_2,Mid-Band (1-2Hz),intensity_r,0.8954595449432095,0.7
+260629_ch5,mouse_3,Mid-Band (1-2Hz),intensity_r,0.9341304448034594,0.7
+260629_ch6,mouse_3,Mid-Band (1-2Hz),intensity_r,0.954748414526832,0.7
+260629_ch7,mouse_4,Mid-Band (1-2Hz),intensity_r,0.6779439673402616,0.7
+260629_ch8,mouse_4,Mid-Band (1-2Hz),intensity_r,0.9237234102959838,0.7
+260702_ch1,mouse_5,Mid-Band (1-2Hz),intensity_r,0.8870692604800953,0.7
+260702_ch2,mouse_5,Mid-Band (1-2Hz),intensity_r,0.7317903589783474,0.7
+260702_ch3,mouse_6,Mid-Band (1-2Hz),intensity_r,0.8911953112112866,0.7
+260702_ch4,mouse_6,Mid-Band (1-2Hz),intensity_r,0.8846409173138585,0.7
+260702_ch5,mouse_7,Mid-Band (1-2Hz),intensity_r,0.890577039961263,0.7
+260702_ch6,mouse_7,Mid-Band (1-2Hz),intensity_r,0.8895277232846064,0.7
+260702_ch7,mouse_8,Mid-Band (1-2Hz),intensity_r,0.799697496103142,0.7
+260702_ch8,mouse_8,Mid-Band (1-2Hz),intensity_r,0.9017415603944108,0.7
+260706_ch1,mouse_1,Mid-Band (1-2Hz),intensity_r,0.9500097098172392,0.7
+260706_ch2,mouse_1,Mid-Band (1-2Hz),intensity_r,0.7178462956467948,0.7
+260706_ch3,mouse_2,Mid-Band (1-2Hz),intensity_r,0.8651036505021582,0.7
+260706_ch4,mouse_2,Mid-Band (1-2Hz),intensity_r,0.7938183352623862,0.7
+260706_ch5,mouse_3,Mid-Band (1-2Hz),intensity_r,0.3280034764543756,0.7
+260706_ch6,mouse_3,Mid-Band (1-2Hz),intensity_r,0.8435511338926782,0.7
+260706_ch7,mouse_4,Mid-Band (1-2Hz),intensity_r,0.6194291813139645,0.7
+260706_ch8,mouse_4,Mid-Band (1-2Hz),intensity_r,0.8681236998852719,0.7
+260626_ch1,mouse_5,Mid-Band (2-5Hz),intensity_r,0.7801271746361322,0.7
+260626_ch2,mouse_5,Mid-Band (2-5Hz),intensity_r,-0.3331104295255417,0.7
+260626_ch3,mouse_6,Mid-Band (2-5Hz),intensity_r,-0.2207548976991418,0.7
+260626_ch4,mouse_6,Mid-Band (2-5Hz),intensity_r,0.135756835562239,0.7
+260626_ch5,mouse_7,Mid-Band (2-5Hz),intensity_r,0.6057850164132039,0.7
+260626_ch6,mouse_7,Mid-Band (2-5Hz),intensity_r,0.6008866870799805,0.7
+260626_ch7,mouse_8,Mid-Band (2-5Hz),intensity_r,0.6423722867154988,0.7
+260626_ch8,mouse_8,Mid-Band (2-5Hz),intensity_r,0.3434550839224276,0.7
+260629_ch1,mouse_1,Mid-Band (2-5Hz),intensity_r,0.7214485105664465,0.7
+260629_ch2,mouse_1,Mid-Band (2-5Hz),intensity_r,0.2393329113700872,0.7
+260629_ch3,mouse_2,Mid-Band (2-5Hz),intensity_r,0.2818097662816264,0.7
+260629_ch4,mouse_2,Mid-Band (2-5Hz),intensity_r,0.3538681865275916,0.7
+260629_ch5,mouse_3,Mid-Band (2-5Hz),intensity_r,0.8865439208710337,0.7
+260629_ch6,mouse_3,Mid-Band (2-5Hz),intensity_r,0.9564340257000944,0.7
+260629_ch7,mouse_4,Mid-Band (2-5Hz),intensity_r,0.5550444480462464,0.7
+260629_ch8,mouse_4,Mid-Band (2-5Hz),intensity_r,0.8844813195077887,0.7
+260702_ch1,mouse_5,Mid-Band (2-5Hz),intensity_r,0.6100484929721479,0.7
+260702_ch2,mouse_5,Mid-Band (2-5Hz),intensity_r,0.2820857981271125,0.7
+260702_ch3,mouse_6,Mid-Band (2-5Hz),intensity_r,0.7587320731578643,0.7
+260702_ch4,mouse_6,Mid-Band (2-5Hz),intensity_r,0.8070357102031612,0.7
+260702_ch5,mouse_7,Mid-Band (2-5Hz),intensity_r,0.6652021718010113,0.7
+260702_ch6,mouse_7,Mid-Band (2-5Hz),intensity_r,0.6618513619302147,0.7
+260702_ch7,mouse_8,Mid-Band (2-5Hz),intensity_r,0.5613151132617811,0.7
+260702_ch8,mouse_8,Mid-Band (2-5Hz),intensity_r,0.7358791229584917,0.7
+260706_ch1,mouse_1,Mid-Band (2-5Hz),intensity_r,0.9482767311685408,0.7
+260706_ch2,mouse_1,Mid-Band (2-5Hz),intensity_r,-0.2457149397872977,0.7
+260706_ch3,mouse_2,Mid-Band (2-5Hz),intensity_r,0.7481939455898061,0.7
+260706_ch4,mouse_2,Mid-Band (2-5Hz),intensity_r,-0.3437323504034691,0.7
+260706_ch5,mouse_3,Mid-Band (2-5Hz),intensity_r,-0.022447673247011,0.7
+260706_ch6,mouse_3,Mid-Band (2-5Hz),intensity_r,0.5557914580903756,0.7
+260706_ch7,mouse_4,Mid-Band (2-5Hz),intensity_r,0.5615284292786663,0.7
+260706_ch8,mouse_4,Mid-Band (2-5Hz),intensity_r,0.7416879136211445,0.7
+260626_ch1,mouse_5,High-Pass (>5Hz),intensity_r,0.6831039866555572,0.7
+260626_ch2,mouse_5,High-Pass (>5Hz),intensity_r,-0.8358654669824924,0.7
+260626_ch3,mouse_6,High-Pass (>5Hz),intensity_r,-0.4111516195427154,0.7
+260626_ch4,mouse_6,High-Pass (>5Hz),intensity_r,-0.9151782455781758,0.7
+260626_ch5,mouse_7,High-Pass (>5Hz),intensity_r,0.1154093001412109,0.7
+260626_ch6,mouse_7,High-Pass (>5Hz),intensity_r,-0.6129390043670265,0.7
+260626_ch7,mouse_8,High-Pass (>5Hz),intensity_r,0.6680959976301638,0.7
+260626_ch8,mouse_8,High-Pass (>5Hz),intensity_r,0.0420309758373722,0.7
+260629_ch1,mouse_1,High-Pass (>5Hz),intensity_r,0.5791061898086297,0.7
+260629_ch2,mouse_1,High-Pass (>5Hz),intensity_r,-0.3979570991373363,0.7
+260629_ch3,mouse_2,High-Pass (>5Hz),intensity_r,-0.2778410458184275,0.7
+260629_ch4,mouse_2,High-Pass (>5Hz),intensity_r,-0.6791955053612588,0.7
+260629_ch5,mouse_3,High-Pass (>5Hz),intensity_r,0.8202944422810649,0.7
+260629_ch6,mouse_3,High-Pass (>5Hz),intensity_r,0.9478259590510212,0.7
+260629_ch7,mouse_4,High-Pass (>5Hz),intensity_r,0.5307054479921355,0.7
+260629_ch8,mouse_4,High-Pass (>5Hz),intensity_r,0.8665733610319063,0.7
+260702_ch1,mouse_5,High-Pass (>5Hz),intensity_r,-0.0836107408716921,0.7
+260702_ch2,mouse_5,High-Pass (>5Hz),intensity_r,0.1307199331544875,0.7
+260702_ch3,mouse_6,High-Pass (>5Hz),intensity_r,0.3904295950694832,0.7
+260702_ch4,mouse_6,High-Pass (>5Hz),intensity_r,0.4838894801229279,0.7
+260702_ch5,mouse_7,High-Pass (>5Hz),intensity_r,-0.1575949275935891,0.7
+260702_ch6,mouse_7,High-Pass (>5Hz),intensity_r,-0.1449179987905051,0.7
+260702_ch7,mouse_8,High-Pass (>5Hz),intensity_r,0.0613566210034217,0.7
+260702_ch8,mouse_8,High-Pass (>5Hz),intensity_r,0.6175773504497636,0.7
+260706_ch1,mouse_1,High-Pass (>5Hz),intensity_r,0.9421806879007698,0.7
+260706_ch2,mouse_1,High-Pass (>5Hz),intensity_r,-0.9206133705837536,0.7
+260706_ch3,mouse_2,High-Pass (>5Hz),intensity_r,0.6447413936067948,0.7
+260706_ch4,mouse_2,High-Pass (>5Hz),intensity_r,-0.89892410013598,0.7
+260706_ch5,mouse_3,High-Pass (>5Hz),intensity_r,-0.2861469113232064,0.7
+260706_ch6,mouse_3,High-Pass (>5Hz),intensity_r,-0.3137433076168084,0.7
+260706_ch7,mouse_4,High-Pass (>5Hz),intensity_r,0.5672753991467273,0.7
+260706_ch8,mouse_4,High-Pass (>5Hz),intensity_r,0.6803252643309968,0.7

@@ -1,0 +1,2 @@
+﻿good_cut,rule,TP,FP,FN,TN,PPV,NPV,sensitivity,specificity,n_pass,n_pass_mice,threshold
+0.7,par_only,12,3,1,16,0.8,0.9411764705882352,0.9230769230769232,0.8421052631578947,15,7,0.2851837343959558

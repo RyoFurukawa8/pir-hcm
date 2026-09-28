@@ -1,0 +1,60 @@
+﻿version,key,value,note
+good070,fig1_variance_ratio_raw,102.65,ch=260626_ch4 variant=high
+good070,fig1_variance_ratio_lpf,1082.65,ch=260626_ch4 variant=high
+good070,fig1_source,"ch=260626_ch4, variant=high",
+good070,fig2_circadian_r,0.9617,"PIR vs NanoTag, normalized circadian profile"
+good070,fig3_intensity_r_ci,"0.9171 [0.8986, 0.9269]",
+good070,fig3_n_series,5,"Random-
+shuffle; Mismatched-
+pairing; Trend-
+removed; Active-
+only; Measured"
+good070,fig3_n_controls,4,"Random-
+shuffle; Mismatched-
+pairing; Trend-
+removed; Active-
+only"
+good070,fig4_repr_abs_rest_mu_diff,0.0434,ch=260626_ch6; |GMM rest component mean - reference rest MEAN|
+good070,fig4_repr_gmm_rest_mu,-13.2364,ch=260626_ch6
+good070,fig4_repr_ref_rest_mu_mean,-13.2798,ch=260626_ch6; reference rest MEAN
+good070,fig4_representative_channel,260626_ch6,mouse_id=mouse_7
+good070,fig4_abs_rest_mean_diff_median_meanref,0.0714,n=32; GMM component mean vs reference rest MEAN (推定量を揃えた版。採用)
+good070,fig4_abs_rest_mean_diff_median,0.0673,n=32; 従来版（参照 rest の中央値を使用）
+good070,fig4_abs_rest_mean_diff_median_qc,0.0579,n=15; GMM component mean vs reference rest MEAN
+good070,fig5_qc_threshold,0.2852,LOMO
+good070,fig5_auc_gmm_separation,0.166,
+good070,fig5_auc_snr,0.6235,
+good070,fig5_auc_floor_rate,0.6862,
+good070,fig5_auc_pir_active_rate,0.9231,
+good070,fig5b_auc_gmm_separation_inverted,0.834,1 - observed GMM-separation AUC; caption-only auxiliary value
+good070,fig5c_f1_all,"0.6840 [0.6516, 0.7339]",F1_all_mean; point [95% CI] from int_bootstrap_ci.csv
+good070,fig5c_f1_qc,"0.7715 [0.6998, 0.8141]",F1_qc1_mean; point [95% CI] from int_bootstrap_ci.csv
+good070,fig5_confusion,TP=12 FP=3 FN=1 TN=16,par_only
+good070,fig5_fn_share_pct,85.5,FN=28168 FP=4775
+good070,figS1_median_empty,-13.71,n=128
+good070,figS1_median_active_rest,-12.93,n=172
+good070,figS1_median_active_move,-10.09,n=6692
+good070,figS3_n_ch_argmin_k_is_2,0,of 32 channels
+good070,figS4_spearman_mouse_1,0.9437,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_1,0.9226,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_2,0.9253,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_2,0.916,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_3,0.8721,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_3,0.8678,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_4,0.9259,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_4,0.8679,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_5,0.9159,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_5,0.8918,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_6,0.9172,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_6,0.904,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_7,0.9238,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_7,0.9103,pooled bins within animal (not Table 2)
+good070,figS4_spearman_mouse_8,0.9131,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_pooled_mouse_8,0.8889,pooled bins within animal (not Table 2)
+good070,figS4_spearman_range,0.8721-0.9437,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS4_spearman_range_chmean,0.8721-0.9437,"mean of channel-wise intensity_r, matches Table 2"
+good070,figS5_fp_below_lower_bound,1,of 3 FP
+good070,figS5_fp_above_upper_bound,0,of 3 FP
+good070,figS5_bad_below_lower_bound,14,of 19 bad channels
+good070,figS5_bad_above_upper_bound,0,of 19 bad channels
+good070,figS6_holdout_f1_mean,0.7739,n=7 folds; true leave-one-mouse-out

@@ -1,0 +1,9 @@
+﻿mouse_id,fold_excluded_mouse,r_test,aggregation,good_cut
+mouse_1,mouse_1,0.91333320319474,mean_of_mouse_means,0.7
+mouse_2,mouse_2,0.91595609722761,mean_of_mouse_means,0.7
+mouse_3,mouse_3,0.923554654755384,mean_of_mouse_means,0.7
+mouse_4,mouse_4,0.9158753547750236,mean_of_mouse_means,0.7
+mouse_5,mouse_5,0.917298499553646,mean_of_mouse_means,0.7
+mouse_6,mouse_6,0.9171253926173978,mean_of_mouse_means,0.7
+mouse_7,mouse_7,0.9161766421771036,mean_of_mouse_means,0.7
+mouse_8,mouse_8,0.9177096552855122,mean_of_mouse_means,0.7

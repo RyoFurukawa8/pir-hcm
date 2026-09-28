@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the article and this archive."
+title: "PIR-HCM: analysis code and intermediate data for home-cage activity monitoring from the analog signal of a commercial PIR sensor"
+authors:
+  - family-names: Furukawa
+    given-names: Ryo
+  - family-names: Tomita
+    given-names: Jun
+  - family-names: Kume
+    given-names: Kazuhiko
+version: "1.0.0"
+doi: "10.5281/zenodo.TODO"
+date-released: "2026-TODO"
+license: MIT
+repository-code: "https://github.com/TODO/pir-hcm"
+preferred-citation:
+  type: article
+  title: "Non-invasive active/rest classification and continuous graded activity quantification in mice using analog passive-infrared sensing and unsupervised Gaussian mixture modelling"
+  journal: "Sensors"
+  year: 2026
+  doi: "TODO"
+  authors:
+    - family-names: Furukawa
+      given-names: Ryo
+    - family-names: Tomita
+      given-names: Jun
+    - family-names: Kume
+      given-names: Kazuhiko

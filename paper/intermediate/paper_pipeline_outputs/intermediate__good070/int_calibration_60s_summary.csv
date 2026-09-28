@@ -1,0 +1,2 @@
+﻿reconstructable,n_channel,channel_median_mean,channel_median_sd,channel_median_min,channel_median_max,good_cut,note
+1,32,-14.177916765826012,2.8068349942259885,-23.025850929940457,-10.667408772777614,0.7,30/32 comparison and Spearman require occupied/rest reference columns; see PAPER_VALUES for availability check.

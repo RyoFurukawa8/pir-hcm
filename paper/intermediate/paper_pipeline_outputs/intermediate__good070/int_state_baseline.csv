@@ -1,0 +1,161 @@
+﻿ch,mouse_id,method,threshold,f1_state,threshold_note,degenerate_flag,good_cut
+260626_ch1,mouse_5,gmm_boundary_threshold,-13.3493,0.7456,,0,0.7
+260626_ch1,mouse_5,otsu,-11.5993,0.5677,,0,0.7
+260626_ch1,mouse_5,median_split,-14.5001,0.7716,,0,0.7
+260626_ch1,mouse_5,fixed_quantile,-14.5001,0.7716,,0,0.7
+260626_ch2,mouse_5,gmm_boundary_threshold,-12.3272,0.8153,,0,0.7
+260626_ch2,mouse_5,otsu,-10.5058,0.5026,,0,0.7
+260626_ch2,mouse_5,median_split,-12.6869,0.8221,,0,0.7
+260626_ch2,mouse_5,fixed_quantile,-12.6869,0.8221,,0,0.7
+260626_ch3,mouse_6,gmm_boundary_threshold,-10.7154,0.542,,0,0.7
+260626_ch3,mouse_6,otsu,-11.1693,0.5702,,0,0.7
+260626_ch3,mouse_6,median_split,-13.0716,0.6587,,0,0.7
+260626_ch3,mouse_6,fixed_quantile,-13.0716,0.6587,,0,0.7
+260626_ch4,mouse_6,gmm_boundary_threshold,-12.4485,0.863,,0,0.7
+260626_ch4,mouse_6,otsu,-10.3751,0.5845,,0,0.7
+260626_ch4,mouse_6,median_split,-12.721,0.863,,0,0.7
+260626_ch4,mouse_6,fixed_quantile,-12.721,0.863,,0,0.7
+260626_ch5,mouse_7,gmm_boundary_threshold,-11.4885,0.7001,,0,0.7
+260626_ch5,mouse_7,otsu,-10.382,0.6014,,0,0.7
+260626_ch5,mouse_7,median_split,-12.647,0.8135,,0,0.7
+260626_ch5,mouse_7,fixed_quantile,-12.647,0.8135,,0,0.7
+260626_ch6,mouse_7,gmm_boundary_threshold,-11.7465,0.8312,,0,0.7
+260626_ch6,mouse_7,otsu,-10.5098,0.6761,,0,0.7
+260626_ch6,mouse_7,median_split,-12.7011,0.8696,,0,0.7
+260626_ch6,mouse_7,fixed_quantile,-12.7011,0.8696,,0,0.7
+260626_ch7,mouse_8,gmm_boundary_threshold,-10.2619,0.6444,,0,0.7
+260626_ch7,mouse_8,otsu,-9.4255,0.5465,,0,0.7
+260626_ch7,mouse_8,median_split,-10.8202,0.6617,,0,0.7
+260626_ch7,mouse_8,fixed_quantile,-10.8202,0.6617,,0,0.7
+260626_ch8,mouse_8,gmm_boundary_threshold,-10.7996,0.6382,,0,0.7
+260626_ch8,mouse_8,otsu,-11.2208,0.6474,,0,0.7
+260626_ch8,mouse_8,median_split,-13.4519,0.6622,,0,0.7
+260626_ch8,mouse_8,fixed_quantile,-13.4519,0.6622,,0,0.7
+260629_ch1,mouse_1,gmm_boundary_threshold,-13.0795,0.8524,,0,0.7
+260629_ch1,mouse_1,otsu,-12.4255,0.8289,,0,0.7
+260629_ch1,mouse_1,median_split,-13.6279,0.8507,,0,0.7
+260629_ch1,mouse_1,fixed_quantile,-13.6279,0.8507,,0,0.7
+260629_ch2,mouse_1,gmm_boundary_threshold,-12.3645,0.8106,,0,0.7
+260629_ch2,mouse_1,otsu,-10.8496,0.5638,,0,0.7
+260629_ch2,mouse_1,median_split,-12.9847,0.8355,,0,0.7
+260629_ch2,mouse_1,fixed_quantile,-12.9847,0.8355,,0,0.7
+260629_ch3,mouse_2,gmm_boundary_threshold,-12.0634,0.5415,,0,0.7
+260629_ch3,mouse_2,otsu,-10.4947,0.4291,,0,0.7
+260629_ch3,mouse_2,median_split,-12.643,0.7053,,0,0.7
+260629_ch3,mouse_2,fixed_quantile,-12.643,0.7053,,0,0.7
+260629_ch4,mouse_2,gmm_boundary_threshold,-11.8214,0.5631,,0,0.7
+260629_ch4,mouse_2,otsu,-10.3641,0.4749,,0,0.7
+260629_ch4,mouse_2,median_split,-12.5556,0.7296,,0,0.7
+260629_ch4,mouse_2,fixed_quantile,-12.5556,0.7296,,0,0.7
+260629_ch5,mouse_3,gmm_boundary_threshold,-12.524,0.6773,,0,0.7
+260629_ch5,mouse_3,otsu,-11.124,0.6002,,0,0.7
+260629_ch5,mouse_3,median_split,-13.8665,0.7822,,0,0.7
+260629_ch5,mouse_3,fixed_quantile,-13.8665,0.7822,,0,0.7
+260629_ch6,mouse_3,gmm_boundary_threshold,-17.1631,0.8515,,0,0.7
+260629_ch6,mouse_3,otsu,-16.3433,0.8565,,0,0.7
+260629_ch6,mouse_3,median_split,-13.3366,0.8688,,0,0.7
+260629_ch6,mouse_3,fixed_quantile,-13.3366,0.8688,,0,0.7
+260629_ch7,mouse_4,gmm_boundary_threshold,-10.4454,0.5883,,1,0.7
+260629_ch7,mouse_4,otsu,-9.3957,0.4728,,0,0.7
+260629_ch7,mouse_4,median_split,-10.956,0.673,,0,0.7
+260629_ch7,mouse_4,fixed_quantile,-10.956,0.673,,0,0.7
+260629_ch8,mouse_4,gmm_boundary_threshold,-13.3404,0.8701,,0,0.7
+260629_ch8,mouse_4,otsu,-11.1747,0.6755,,0,0.7
+260629_ch8,mouse_4,median_split,-13.6678,0.8385,,0,0.7
+260629_ch8,mouse_4,fixed_quantile,-13.6678,0.8385,,0,0.7
+260702_ch1,mouse_5,gmm_boundary_threshold,-10.1544,0.5648,,0,0.7
+260702_ch1,mouse_5,otsu,-10.7269,0.5766,,0,0.7
+260702_ch1,mouse_5,median_split,-13.1078,0.6592,,0,0.7
+260702_ch1,mouse_5,fixed_quantile,-13.1078,0.6592,,0,0.7
+260702_ch2,mouse_5,gmm_boundary_threshold,-11.2862,0.4982,,0,0.7
+260702_ch2,mouse_5,otsu,-11.6086,0.5285,,0,0.7
+260702_ch2,mouse_5,median_split,-13.5358,0.6766,,0,0.7
+260702_ch2,mouse_5,fixed_quantile,-13.5358,0.6766,,0,0.7
+260702_ch3,mouse_6,gmm_boundary_threshold,-11.7151,0.6857,,0,0.7
+260702_ch3,mouse_6,otsu,-11.1472,0.657,,0,0.7
+260702_ch3,mouse_6,median_split,-13.4423,0.7419,,0,0.7
+260702_ch3,mouse_6,fixed_quantile,-13.4423,0.7419,,0,0.7
+260702_ch4,mouse_6,gmm_boundary_threshold,-10.8273,0.5853,,0,0.7
+260702_ch4,mouse_6,otsu,-10.8291,0.5853,,0,0.7
+260702_ch4,mouse_6,median_split,-13.1978,0.7241,,0,0.7
+260702_ch4,mouse_6,fixed_quantile,-13.1978,0.7241,,0,0.7
+260702_ch5,mouse_7,gmm_boundary_threshold,-10.1859,0.6282,,1,0.7
+260702_ch5,mouse_7,otsu,-10.1857,0.6282,,0,0.7
+260702_ch5,mouse_7,median_split,-12.2571,0.855,,0,0.7
+260702_ch5,mouse_7,fixed_quantile,-12.2571,0.855,,0,0.7
+260702_ch6,mouse_7,gmm_boundary_threshold,-9.4031,0.5243,,0,0.7
+260702_ch6,mouse_7,otsu,-10.6346,0.5981,,0,0.7
+260702_ch6,mouse_7,median_split,-12.282,0.7704,,0,0.7
+260702_ch6,mouse_7,fixed_quantile,-12.282,0.7704,,0,0.7
+260702_ch7,mouse_8,gmm_boundary_threshold,-10.5705,0.7007,,0,0.7
+260702_ch7,mouse_8,otsu,-9.3011,0.5509,,0,0.7
+260702_ch7,mouse_8,median_split,-11.0283,0.731,,0,0.7
+260702_ch7,mouse_8,fixed_quantile,-11.0283,0.731,,0,0.7
+260702_ch8,mouse_8,gmm_boundary_threshold,-12.129,0.7225,,0,0.7
+260702_ch8,mouse_8,otsu,-10.1813,0.6024,,0,0.7
+260702_ch8,mouse_8,median_split,-12.7782,0.7529,,0,0.7
+260702_ch8,mouse_8,fixed_quantile,-12.7782,0.7529,,0,0.7
+260706_ch1,mouse_1,gmm_boundary_threshold,-14.1745,0.8004,,0,0.7
+260706_ch1,mouse_1,otsu,-13.8809,0.7884,,0,0.7
+260706_ch1,mouse_1,median_split,-16.2244,0.8196,,0,0.7
+260706_ch1,mouse_1,fixed_quantile,-16.2244,0.8196,,0,0.7
+260706_ch2,mouse_1,gmm_boundary_threshold,-12.4142,0.7938,,0,0.7
+260706_ch2,mouse_1,otsu,-10.6577,0.5594,,0,0.7
+260706_ch2,mouse_1,median_split,-12.8294,0.8275,,0,0.7
+260706_ch2,mouse_1,fixed_quantile,-12.8294,0.8275,,0,0.7
+260706_ch3,mouse_2,gmm_boundary_threshold,-12.4329,0.5702,,0,0.7
+260706_ch3,mouse_2,otsu,-11.848,0.5161,,0,0.7
+260706_ch3,mouse_2,median_split,-14.1494,0.7297,,0,0.7
+260706_ch3,mouse_2,fixed_quantile,-14.1494,0.7297,,0,0.7
+260706_ch4,mouse_2,gmm_boundary_threshold,-12.3011,0.6566,,0,0.7
+260706_ch4,mouse_2,otsu,-10.4581,0.4589,,0,0.7
+260706_ch4,mouse_2,median_split,-12.7845,0.7334,,0,0.7
+260706_ch4,mouse_2,fixed_quantile,-12.7845,0.7334,,0,0.7
+260706_ch5,mouse_3,gmm_boundary_threshold,-11.6241,0.6216,,1,0.7
+260706_ch5,mouse_3,otsu,-10.654,0.5877,,0,0.7
+260706_ch5,mouse_3,median_split,-10.4166,0.5791,,0,0.7
+260706_ch5,mouse_3,fixed_quantile,-10.4166,0.5791,,0,0.7
+260706_ch6,mouse_3,gmm_boundary_threshold,-10.603,0.6271,,1,0.7
+260706_ch6,mouse_3,otsu,-11.0099,0.6881,,0,0.7
+260706_ch6,mouse_3,median_split,-12.7615,0.872,,0,0.7
+260706_ch6,mouse_3,fixed_quantile,-12.7615,0.872,,0,0.7
+260706_ch7,mouse_4,gmm_boundary_threshold,-10.1592,0.5646,,0,0.7
+260706_ch7,mouse_4,otsu,-9.4112,0.4288,,0,0.7
+260706_ch7,mouse_4,median_split,-10.7351,0.7174,,0,0.7
+260706_ch7,mouse_4,fixed_quantile,-10.7351,0.7174,,0,0.7
+260706_ch8,mouse_4,gmm_boundary_threshold,-12.8183,0.7851,,0,0.7
+260706_ch8,mouse_4,otsu,-11.2055,0.6083,,0,0.7
+260706_ch8,mouse_4,median_split,-13.3119,0.7978,,0,0.7
+260706_ch8,mouse_4,fixed_quantile,-13.3119,0.7978,,0,0.7
+260626_ch1,mouse_5,gmm_argmax,,0.7456,posterior argmax; no scalar threshold,0,0.7
+260626_ch2,mouse_5,gmm_argmax,,0.8145560407569141,posterior argmax; no scalar threshold,0,0.7
+260626_ch3,mouse_6,gmm_argmax,,0.5419501133786848,posterior argmax; no scalar threshold,0,0.7
+260626_ch4,mouse_6,gmm_argmax,,0.8629878869448183,posterior argmax; no scalar threshold,0,0.7
+260626_ch5,mouse_7,gmm_argmax,,0.7000572409845449,posterior argmax; no scalar threshold,0,0.7
+260626_ch6,mouse_7,gmm_argmax,,0.8312048861743476,posterior argmax; no scalar threshold,0,0.7
+260626_ch7,mouse_8,gmm_argmax,,0.6444275966641395,posterior argmax; no scalar threshold,0,0.7
+260626_ch8,mouse_8,gmm_argmax,,0.6382488479262672,posterior argmax; no scalar threshold,0,0.7
+260629_ch1,mouse_1,gmm_argmax,,0.8524424196405973,posterior argmax; no scalar threshold,0,0.7
+260629_ch2,mouse_1,gmm_argmax,,0.8084759576202118,posterior argmax; no scalar threshold,0,0.7
+260629_ch3,mouse_2,gmm_argmax,,0.5743913435527502,posterior argmax; no scalar threshold,0,0.7
+260629_ch4,mouse_2,gmm_argmax,,0.5631479736098021,posterior argmax; no scalar threshold,0,0.7
+260629_ch5,mouse_3,gmm_argmax,,0.6773182957393483,posterior argmax; no scalar threshold,0,0.7
+260629_ch6,mouse_3,gmm_argmax,,0.8514980460269214,posterior argmax; no scalar threshold,0,0.7
+260629_ch7,mouse_4,gmm_argmax,,0.5880478087649402,posterior argmax; no scalar threshold,0,0.7
+260629_ch8,mouse_4,gmm_argmax,,0.8691536748329621,posterior argmax; no scalar threshold,0,0.7
+260702_ch1,mouse_5,gmm_argmax,,0.564804256936526,posterior argmax; no scalar threshold,0,0.7
+260702_ch2,mouse_5,gmm_argmax,,0.4982064567556795,posterior argmax; no scalar threshold,0,0.7
+260702_ch3,mouse_6,gmm_argmax,,0.6856959589480436,posterior argmax; no scalar threshold,0,0.7
+260702_ch4,mouse_6,gmm_argmax,,0.5852972212451636,posterior argmax; no scalar threshold,0,0.7
+260702_ch5,mouse_7,gmm_argmax,,0.6281923714759535,posterior argmax; no scalar threshold,0,0.7
+260702_ch6,mouse_7,gmm_argmax,,0.5243204577968527,posterior argmax; no scalar threshold,0,0.7
+260702_ch7,mouse_8,gmm_argmax,,0.698844323589395,posterior argmax; no scalar threshold,0,0.7
+260702_ch8,mouse_8,gmm_argmax,,0.7224785761371127,posterior argmax; no scalar threshold,0,0.7
+260706_ch1,mouse_1,gmm_argmax,,0.800350774627302,posterior argmax; no scalar threshold,0,0.7
+260706_ch2,mouse_1,gmm_argmax,,0.7907937444673945,posterior argmax; no scalar threshold,0,0.7
+260706_ch3,mouse_2,gmm_argmax,,0.5701640197865139,posterior argmax; no scalar threshold,0,0.7
+260706_ch4,mouse_2,gmm_argmax,,0.6559578038839606,posterior argmax; no scalar threshold,0,0.7
+260706_ch5,mouse_3,gmm_argmax,,0.6215205650186955,posterior argmax; no scalar threshold,0,0.7
+260706_ch6,mouse_3,gmm_argmax,,0.6271072151045178,posterior argmax; no scalar threshold,0,0.7
+260706_ch7,mouse_4,gmm_argmax,,0.5646078059871164,posterior argmax; no scalar threshold,0,0.7
+260706_ch8,mouse_4,gmm_argmax,,0.7848254931714719,posterior argmax; no scalar threshold,0,0.7

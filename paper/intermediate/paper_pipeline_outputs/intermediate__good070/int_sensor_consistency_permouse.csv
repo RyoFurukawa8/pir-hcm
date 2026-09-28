@@ -1,0 +1,9 @@
+﻿mouse_id,median_inter_sensor_r,mean_inter_sensor_r,n_pairs_inter_sensor,good_cut
+mouse_1,0.96285,0.96285,2,0.7
+mouse_2,0.9802,0.9802,2,0.7
+mouse_3,0.8451,0.8451,2,0.7
+mouse_4,0.9335,0.9335,2,0.7
+mouse_5,0.9692,0.9692,2,0.7
+mouse_6,0.9528,0.9528,2,0.7
+mouse_7,0.9535,0.9535,2,0.7
+mouse_8,0.93955,0.93955,2,0.7

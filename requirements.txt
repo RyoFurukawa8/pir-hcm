@@ -1,0 +1,13 @@
+# 論文の数値を出した環境（Python 3.13.14）の版。
+# numpy / pandas / scipy / scikit-learn は論文の Section 2.7.5 に記載された版に一致させてある。
+# matplotlib と openpyxl は論文に記載がないため TODO のまま。論文を出した環境で
+#   python --version
+#   pip freeze | findstr /I "matplotlib openpyxl"     (Windows)
+# を実行し、その出力で置き換えること。新しい環境を作らないこと。
+# 括弧内は、検証用の別環境（Python 3.12.3）で stage2/stage3 が good070 を完全再現した組み合わせ。
+numpy==2.3.3          # 検証環境では 2.4.4
+pandas==3.0.3         # 検証環境では 3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0   # stage1 のみ使用
+matplotlib==TODO      # 検証環境では 3.10.8
+openpyxl==TODO        # 検証環境では 3.1.5

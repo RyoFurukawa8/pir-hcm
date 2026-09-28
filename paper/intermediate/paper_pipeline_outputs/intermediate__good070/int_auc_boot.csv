@@ -1,0 +1,4 @@
+﻿comparison,good_cut,diff_observed,diff_ci_lower,diff_ci_upper,n_boot_valid,cluster_unit,inference_label
+pir_active_rate - snr,0.7,0.2995951417004048,0.0863614081996435,0.5291666666666666,5000,mouse,exploratory_CI_only
+pir_active_rate - floor_rate,0.7,0.2368421052631577,-0.0333333333333332,0.4765625,5000,mouse,exploratory_CI_only
+pir_active_rate - gmm_separation,0.7,0.7570850202429149,0.4583333333333333,0.9878542510121456,5000,mouse,exploratory_CI_only

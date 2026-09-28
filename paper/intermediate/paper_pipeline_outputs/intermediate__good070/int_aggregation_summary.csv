@@ -1,0 +1,7 @@
+﻿metric,scope,median_of_medians,mean_of_means,flat_mean,flat_median,iqr_of_permouse,n_mouse,n_ch,good_cut
+intensity_r,all,0.9246,0.9171,0.9171,0.9254,0.0097,8,32,0.7
+F1_state,all,0.6597,0.684,0.684,0.6666,0.0273,8,32,0.7
+F1_state,par_only,0.7801,0.7715,0.7709,0.8004,0.0646,7,15,0.7
+F1_state,par_snr,0.8044,0.7879,0.7816,0.8044,0.0664,7,14,0.7
+F1_state,par_sep,0.7801,0.7773,0.785,0.8044,0.0646,7,14,0.7
+F1_state,par_snr_sep,0.8044,0.7937,0.7975,0.8085,0.0664,7,13,0.7

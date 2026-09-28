@@ -1,0 +1,5 @@
+﻿item,labview_cost,arduino_cost,good_cut
+DAQ_Hardware,350000,4500,0.7
+Software_License,450000,0,0.7
+Sensor_Interface,120000,3500,0.7
+Total,920000,8000,0.7
