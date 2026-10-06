@@ -1,20 +1,20 @@
 # VALUE_PROVENANCE — 数値の出所対応表 / Value-to-source map
 
 **English summary.** This table maps each decimal value printed in the article and in the
-Supplementary Materials (final versions of 2026-10-05) to the file and column in this repository
+Supplementary Materials (final versions of 2026-10-06) to the file and column in this repository
 from which it is computed, and to the aggregation used. Locations follow the numbering of the
 article (main-text sections §, Figures and Tables; Supplementary Figures S, Tables S and Text S).
 File names such as `TableS1.csv` are the names emitted by the frozen code; their numbers in the
-article are given in `NOTE_FIGURE_NUMBERING.md`. "文献値" marks a value quoted from a cited work,
+article are given in `NOTES.md` (Section 1). "文献値" marks a value quoted from a cited work,
 "…内で導出" a value computed from other values in the same passage. Integer counts (bins, channels,
 pairs, folds) and integer percentages are not listed. Judgement: ✓ source confirmed;
 ▲ see the note in the row.
 
 ## 表について
 
-- 対象は、論文の最終版（本文・補足資料、2026-10-05）に現れる小数を含む値（374 行）。件数（整数）と整数のパーセントは含まない。
+- 対象は、論文の最終版（本文・補足資料、2026-10-06）に現れる小数を含む値（374 行）。件数（整数）と整数のパーセントは含まない。
 - 「出現箇所」は論文の番号で示す（本文の節 §・Figure・Table、補足資料の Figure S・Table S・Text S）。
-- 「出所」の `TableS*.csv` はコードが出力するファイル名で、論文の番号と一部異なる（`NOTE_FIGURE_NUMBERING.md`）。
+- 「出所」の `TableS*.csv` はコードが出力するファイル名で、論文の番号と一部異なる（`NOTES.md` の Section 1）。
   これらの行は、README の手順で再生成した表 CSV の該当セルと照合した。
 - 同じ数字が別の量として複数箇所に現れる場合は、量ごとに行を分けた（例：0.0014、0.0194、0.8210、0.9172）。
 - 判定：✓ 出所確定 ／ ▲ 要注意（行内の注記を参照）。
