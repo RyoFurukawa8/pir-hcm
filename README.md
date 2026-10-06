@@ -1,6 +1,6 @@
 # PIR-HCM: home-cage activity monitoring from the analog signal of a commercial PIR sensor
 
-> **DRAFT (2026-09-28, for v1.0.0).** Items marked `TODO` (the copyright holder, the article DOI and two package versions) must be resolved before the first public release.
+> **DRAFT (2026-10-05, for v1.0.0).** Remaining before release: the copyright holder in `LICENSE` / `LICENSE-DATA`, the article DOI and bibliographic details (here and in `CITATION.cff`), `date-released` in `CITATION.cff`, and the publication of the Zenodo record. Remove this line at release.
 
 This repository accompanies the article:
 
@@ -10,25 +10,29 @@ It contains
 
 | Directory | Contents | Licence |
 |---|---|---|
-| `paper/analysis/` | The analysis code that produced every number, figure and table in the article | MIT License |
+| `paper/analysis/` | The analysis code that produced every number, figure and table in the article, with the record of the edits made for publication (`PATCHES.md`) | MIT License |
 | `paper/intermediate/` | Intermediate data (`int_*.csv`, good_cut = 0.70) from which all figures and tables can be regenerated | CC BY 4.0 |
-| `paper/provenance/` | Value inventory and value-to-source mapping, reference caption values, notes (including the numbering of the supplementary items, `NOTE_FIGURE_NUMBERING.md`) | CC BY 4.0 |
+| `paper/provenance/` | Value inventory and value-to-source mapping, reference caption values, notes (including `NOTE_FIGURE_NUMBERING.md` on the numbering of the supplementary items and `NOTE_CONFIG_COMMENTS.md` on two comments in `config.py`) | CC BY 4.0 |
 
 **The continuous raw voltage recordings are not included.** See *Data availability* below.
 
 The operational tool (`pir_hcm`) is not part of this release.
 
+**Language of the documents.** This README and the `NOTE_*.md` files are in English (the notes also in Japanese).
+`paper/analysis/PATCHES.md` and `paper/provenance/VALUE_PROVENANCE.md` are in Japanese, each with an English summary at the top.
+
 **Stage numbering.** The pipeline was developed with four stages. The former `stage2` produced exploratory
-figures that are not used in the article and is not distributed; the remaining scripts were renumbered for this
+figures that are not used in the article and is not distributed; the remaining scripts were renamed for this
 release (`stage1_compute.py` → `stage2_tables.py` → `stage3_figures.py`). References inside the code to the
 undistributed script are marked `legacy stage2`. The renaming and its verification are documented in
 `paper/analysis/PATCHES.md`.
 
 **Comments in the code.** The frozen scripts contain comments in Japanese, including bracketed notes such as
-`【要確認】`. These are working notes made while the analysis was run; they do not indicate unfinished work.
+`【要確認】` ("to be checked"). These are working notes made while the analysis was run; they do not indicate unfinished work.
+The one in `config.py` is explained in `paper/provenance/NOTE_CONFIG_COMMENTS.md`.
 
 **Generative AI.** Parts of the analysis code were written with the assistance of generative AI tools; the design,
-verification and final responsibility for the code rest with the authors. See Section 2.9 of the article.
+verification and final responsibility for the code rest with the authors. The tools are listed in Section 2.9 of the article.
 
 ---
 
@@ -36,34 +40,37 @@ verification and final responsibility for the code rest with the authors. See Se
 
 The files in `paper/analysis/` are archived **as they were run** to produce the article.
 They have not been refactored, reformatted or optimised, because any behavioural change would break the
-correspondence with the published values. The only edit is the replacement of the author's local path
-strings (4 lines); it is documented, with checksums before and after, in `paper/analysis/PATCHES.md`.
+correspondence with the published values. The edits are of three kinds: the replacement of the author's local
+path strings (4 lines); the renaming of the stage scripts, which also rewrote 34 references to the undistributed
+script (one of them, `stage1_compute.py:3859`, is a file-name string rather than a comment); and the rewording of
+two comments in `config.py` and of one log message and one docstring line in `stage3_figures.py`. All are
+documented, with checksums and with a verification that the outputs are byte-identical, in `paper/analysis/PATCHES.md`.
 
 | Script | Input | Output |
 |---|---|---|
-| `stage1_compute.py` | raw PIR / reference-logger recordings + `mapping.csv` (**not distributed**) | all `int_*.csv` |
-| `stage2_tables.py` | `int_*.csv`, `config.py` | Tables 1–3, Tables S1–S6 |
-| `stage3_figures.py` | `int_*.csv`, `config.py` | Figure 1(d), Figures 2–6, Figures S1–S8 (+ exploratory figures not in the article) |
+| `stage1_compute.py` | raw PIR / reference-logger recordings + `mapping.csv` (**not distributed**) | all `int_*.csv` except `int_lpf_sweep.csv`, which was reused from an earlier run (`paper/provenance/NOTE_LPF_SWEEP.md`) |
+| `stage2_tables.py` | `int_*.csv`, `config.py` | Tables 1–3, Tables S1–S6 (supplementary tables under the code's numbering; see `NOTE_FIGURE_NUMBERING.md`) |
+| `stage3_figures.py` | `int_*.csv`, `config.py` | Figure 1c, Figures 2–6, Figures S1–S8 (code's numbering; see `NOTE_FIGURE_NUMBERING.md`) (+ exploratory figures not in the article) |
 | `config.py` | — | declared settings (imported by all stages) |
 
-Figure 1(a)–(c) are author-drawn illustrations and are not generated by code.
+Figure 1(a) and 1(b) are photographs supplied by the authors; Figure 1c is generated by `stage3_figures.py`.
 
 ## 2. Reproducing the figures and tables
 
-Requirements: Python 3.13 (the article was produced with 3.13.14) and the pinned packages.
+Requirements: Python 3.13 (the article was produced with 3.13.14) and the pinned packages in `requirements.txt` (verified against the environment in which the reported values were produced).
 
 ```bash
 python -m venv .venv && source .venv/bin/activate     # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 
 cd paper/analysis
-python stage2_tables.py        ../intermediate --good-cut 0.70
-python stage3_figures.py   ../intermediate --versions 0.70
+python stage2_tables.py ../intermediate --good-cut 0.70
+python stage3_figures.py ../intermediate --versions 0.70
 ```
 
 The intermediate data are stored under the deep path `paper/intermediate/paper_pipeline_outputs/intermediate__good070/`
 because the scripts expect `<BASE>/paper_pipeline_outputs/intermediate__good<NNN>/`; this lets them run unmodified.
-Only the good_cut = 0.70 version is distributed (all figures and tables in the article, including Table S1, derive from it),
+Only the good_cut = 0.70 version is distributed (all figures and tables in the article derive from it),
 so pass `--versions 0.70` to stage3; its default also looks for a 0.80 version, which is then skipped. Outputs are written to
 `paper/intermediate/paper_pipeline_outputs/outputs/` (`tables/`, `good070/`, `captions/`).
 
@@ -71,26 +78,40 @@ so pass `--versions 0.70` to stage3; its default also looks for a 0.80 version, 
 It is provided so that every computation (aggregation rules, bootstrap seeds, QC definitions) can be read.
 Execution order with raw data: `stage1_compute.py` → `stage2_tables.py` → `stage3_figures.py`.
 
-### Check of the reproduction (2026-09-15, independent environment)
-Running stage2 and stage3 on the distributed `intermediate__good070` reproduced all 51 caption values in
-`paper/provenance/figure_values_good070.csv` exactly, all 9 tables with identical shape, and all 21 figures (good070) ran with every panel reported OK by the script. Images were not compared pixel-by-pixel.
-Byte-level comparison differs only in line endings (the original run was on Windows, CRLF). In Table S1, the last floating-point digit (~1e-16) of some cells may differ across library versions.
+### Check of the reproduction (2026-10-05, independent environment: Linux, Python 3.13.16, packages as pinned)
+Running the two commands above on the distributed `intermediate__good070` completed without error (stage2 < 1 s, stage3 about 2 min).
+All 51 caption values in `outputs/captions/figure_values_good070.csv` matched `paper/provenance/figure_values_good070.csv`;
+the two files differ only in line endings (the distributed copy was written on Windows, CRLF). All 9 tables were generated, and all
+21 figures of good070 (6 main, 8 supplementary, 7 exploratory) were produced with every panel reported OK. Images were not compared
+pixel-by-pixel. In `TableS1.csv` (Table S6 of the article), the last floating-point digit (~1e-16) of some cells may differ across library versions.
+
+### Integrity of the distributed files
+
+```bash
+cd paper/analysis && sha256sum -c SHA256SUMS.txt
+cd ../provenance && sha256sum -c SHA256SUMS.txt
+cd ../intermediate/paper_pipeline_outputs/intermediate__good070 && sha256sum -c ../../SHA256SUMS_good070.txt
+```
+
+`.gitattributes` disables line-ending conversion so that the checksums hold after a `git clone`.
 
 ## 3. Key settings (`config.py`)
 
 | Setting | Value | Meaning |
 |---|---|---|
 | `QC1_GOOD_F1` | `0.70` | a channel is "good" if its state-classification F1 ≥ 0.70 (pre-specified operating line) |
-| `GOOD_CUT_SWEEP` | `[0.70, 0.80]` | versions run by stage1; the full 0.55–0.80 grid is in `int_good_sensitivity_grid.csv` (Table S1) |
+| `GOOD_CUT_VERSIONS`, `GOOD_CUT_SWEEP` | `[0.70, 0.80]` | versions run by stage1 (`GOOD_CUT_VERSIONS`) and the good definitions evaluated within each run (`GOOD_CUT_SWEEP`); the full 0.55–0.80 grid (`GOOD_CUT_GRID`, default in `stage1_compute.py`) is in `int_good_sensitivity_grid.csv` (code `TableS1`, article Table S6; see `paper/provenance/NOTE_FIGURE_NUMBERING.md`) |
 | `PAR_THRESHOLD_SWEEP` | 0.15–0.45, step 0.01 (n = 31) | continuous sweep of the QC threshold |
 | `FIG4_MAIN_CH` | `"260626_ch6"` | representative channel, Figure 4 |
-| `REPR_CH` | `"260626_ch4"` | representative channel, Figure 1 / raw-trace excerpt |
+| `REPR_CH` | `"260626_ch4"` | representative channel, Figures 1c and 2a / raw-trace excerpt |
 | `LOWPASS_CUTOFF_HZ`, `LOWPASS_ORDER` | 1.0 Hz, 4 | Butterworth low-pass before log-variance |
 | `BIN_STATE_SEC`, `BIN_INTENSITY_SEC` | 60 s, 600 s | bin widths for state classification / intensity correlation |
 | `GMM_RANDOM_STATE` | 42 | GMM seed |
 
-`BASE_DATA_DIR` in `config.py` is the original author's local path; pass the base directory on the command
+`BASE_DATA_DIR` in `config.py` has been replaced by a placeholder (`C:\path\to\data`); pass the base directory on the command
 line (as above) or set `SENSORS_BASE_DATA_DIR`.
+
+Recordings 260626, 260629, 260702 and 260706 in the file names are Records 1–4 of the article.
 
 ## 4. Notes for readers of the intermediate files
 
@@ -100,9 +121,11 @@ line (as above) or set `SENSORS_BASE_DATA_DIR`.
   (all columns except the version label) is identical: `analysis_payload_hash_match=True`.
   The same applies to the `int_channel_raw_sha256` column in `int_version_crosswalk.csv`.
   See `paper/intermediate/NOTE_VERSION_DRIFT_CHECK.md`.
-* `int_raw_trace.csv` contains short excerpts (150 s windows) of the PIR signal for four channels, used only
-  to draw Figure 1(d). It is not the continuous raw recording.
-* Every intermediate file carries a `good_cut` column identifying its version.
+* `int_raw_trace.csv` contains 24 short excerpts (windows of up to 150 s, about 59 min in total at 30 Hz) of the PIR
+  signal for four channels and three mice, saved as candidates when Figure 1 was prepared. Figure 1c uses three
+  of them. It is not the continuous raw recording.
+* Every intermediate file carries a `good_cut` column. It identifies the version (0.7) in all files except
+  `int_good_sensitivity_grid.csv` and `int_version_crosswalk.csv`, where it holds the swept or compared values.
 * `int_lpf_sweep.csv` (low-pass cutoff sweep) was reused from an earlier run, not recomputed for this release.
   See `paper/provenance/NOTE_LPF_SWEEP.md`.
 * `PAPER_VALUES.md` prints `QC1_GOOD_F1=0.8` in its settings block; this is a run-time artefact and the file is the
@@ -111,24 +134,31 @@ line (as above) or set `SENSORS_BASE_DATA_DIR`.
 ## 5. Data availability
 
 The continuous voltage recordings of the sensor outputs (30 Hz) are not included.
-Short excerpts (150 s) used to draw Figure 1(d) are included in `int_raw_trace.csv`.
-All figures (except the schematic Figure 1(a)–(c)) and all tables of the article and Supplementary Materials can be
-regenerated from the intermediate data in this repository.
+Short excerpts (24 windows of up to 150 s) of four channels are included in `int_raw_trace.csv`; Figure 1c uses three of them.
+All figures except the photographs Figure 1(a) and 1(b), and all tables of the article and the Supplementary
+Materials, can be regenerated from the intermediate data in this repository, with three differences worth naming.
+Table 1 of the article (system configuration and minimum requirements) was written by the authors; `stage2_tables.py`
+writes a different, longer table under the same name, in which seven hardware rows are emitted as `[要記入]`
+("to be filled in") and the other rows give counts and settings read from `int_channel.csv` and `config.py`
+(the sampling rate and the number of channels can be checked against the article). The "All" row of Table 2 is an
+aggregate added when the table was typeset. The note that `stage2_tables.py` writes under Table 3 attributes the
+single false negative to the averaging of the fold thresholds, whereas the article (Section 3.5) states that this
+channel also fails in the only fold in which it is held out.
 
-During peer review this repository is shared privately with the reviewers; the repository and the Zenodo archive
-are made public upon acceptance of the article.
+During peer review the contents of this repository are provided to the reviewers as a supplementary file submitted
+with the article; the GitHub repository and the Zenodo archive are made public upon acceptance of the article.
 
 ## 6. Citation
 
-See `CITATION.cff`. Please cite the article and the Zenodo archive (DOI: [10.5281/zenodo.23008577](https://doi.org/10.5281/zenodo.23008577)).
+See `CITATION.cff`. Please cite the article and the Zenodo archive (DOI: [10.5281/zenodo.23008577](https://doi.org/10.5281/zenodo.23008577); the record becomes accessible when the archive is made public).
 
 Source repository: <https://github.com/RyoFurukawa8/pir-hcm>
 
-## 6.1 Funding
+## 7. Funding
 
 This work was supported by JST SPRING, Japan Grant Number JPMJSP2130.
 
-## 7. Licence
+## 8. Licence
 
 * Code (`paper/analysis/`): MIT License — see `LICENSE`.
 * Data (`paper/intermediate/`, `paper/provenance/`): CC BY 4.0 — see `LICENSE-DATA`.

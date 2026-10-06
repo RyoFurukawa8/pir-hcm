@@ -1475,7 +1475,7 @@ def fig1(ctx: Ctx) -> None:
         fontsize=10,
         y=1.02,
     )
-    ctx.log("    [Fig1] CAPTION UPDATE REQUIRED: 旧値 102.65 / 1081.09 を上の2値に差し替えること")
+    ctx.log("    [Fig1] variance ratios above are the values used in the caption of the article.")
     ctx.value("fig1_source", f"ch={ch}, variant={variant}", "")
     fig.set_layout_engine("constrained")
     ok = len(present)
@@ -1752,7 +1752,7 @@ def xfig_mismatched_pairs(ctx: Ctx) -> None:
     """A2: X figure. The full mismatched-pair (placebo) r distribution, which used
     to be an inset inside Fig3(b). Diagnostic only -- it supports the claim that
     the Placebo bar is low because the distribution sits at 0, not because a mean
-    happens to be small. Adopt it in the manuscript only if a reviewer asks."""
+    happens to be small. It is a diagnostic figure and is not part of the article."""
     pp = ctx.load("int_placebo_pairs.csv")
     if pp is None or "placebo_r" not in pp.columns or not len(pp):
         ctx.log("  [skip] int_placebo_pairs.csv が無い/空")

@@ -14,7 +14,14 @@ The line `QC1_GOOD_F1=0.8` in the *Settings* section of `PAPER_VALUES.md` is an 
 | File | Description |
 |---|---|
 | `PAPER_VALUES.md` | Machine-generated inventory of every intermediate CSV and gate check, written by `stage1_compute.py` (good_cut = 0.70) |
-| `VALUE_PROVENANCE.md` | Mapping from each value in the article to its source file, column and aggregation (Japanese; edited for publication, see `NOTE_VALUE_PROVENANCE.md`) |
+| `VALUE_PROVENANCE.md` | Mapping from each value in the article to its source file, column and aggregation (Japanese, with an English summary; edited for publication, see `NOTE_VALUE_PROVENANCE.md`) |
 | `figure_values_good070.csv` | Caption values written by `stage3_figures.py`; use it to check a reproduction |
+| `NOTE_PAPER_VALUES.md` | This note |
 | `NOTE_VALUE_PROVENANCE.md` | Note on the editing of `VALUE_PROVENANCE.md` |
 | `NOTE_LPF_SWEEP.md` | Note on the reused `int_lpf_sweep.csv` |
+| `NOTE_FIGURE_NUMBERING.md` | Correspondence between the supplementary numbering in the code and in the article |
+| `NOTE_CONFIG_COMMENTS.md` | Note on two comments in `config.py` |
+| `SHA256SUMS.txt` | SHA-256 checksums of the other files in this folder |
+
+In the `int_session_trend.csv` section of `PAPER_VALUES.md`, two rows contain the text `>|0.1|`; its vertical bars
+shift the columns of those rows when the table is rendered on GitHub. The file is left as written by `stage1_compute.py`.

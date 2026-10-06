@@ -14,4 +14,4 @@ It is written by `paper/analysis/stage1_compute.py` (line 4775) and compares the
 (`analysis_payload_hash_match=True`). The same interpretation applies to the column
 `int_channel_raw_sha256` in `int_version_crosswalk.csv`.
 
-This file and the output were left unchanged so that the archived code and outputs correspond exactly.
+The code (`stage1_compute.py`) and its output (`VERSION_DRIFT_CHECK.txt`) were left unchanged so that the archived code and outputs correspond exactly.

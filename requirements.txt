@@ -1,13 +1,11 @@
-# 論文の数値を出した環境（Python 3.13.14）の版。
-# numpy / pandas / scipy / scikit-learn は論文の Section 2.7.5 に記載された版に一致させてある。
-# matplotlib と openpyxl は論文に記載がないため TODO のまま。論文を出した環境で
-#   python --version
-#   pip freeze | findstr /I "matplotlib openpyxl"     (Windows)
-# を実行し、その出力で置き換えること。新しい環境を作らないこと。
-# 括弧内は、検証用の別環境（Python 3.12.3）で stage2/stage3 が good070 を完全再現した組み合わせ。
-numpy==2.3.3          # 検証環境では 2.4.4
-pandas==3.0.3         # 検証環境では 3.0.2
+# Versions of the environment that produced the values, figures and tables of the article (from pip freeze).
+# numpy / pandas / scipy / scikit-learn match Section 2.7.5 of the article.
+# The distributed scripts (stage1_compute.py / stage2_tables.py / stage3_figures.py / config.py) need
+# the 7 packages below (tabulate only through pandas); everything else is the Python standard library.
+numpy==2.3.3
+pandas==3.0.3
 scipy==1.17.1
-scikit-learn==1.8.0   # stage1 のみ使用
-matplotlib==TODO      # 検証環境では 3.10.8
-openpyxl==TODO        # 検証環境では 3.1.5
+scikit-learn==1.8.0   # used by stage1 (and optionally by stage3 for ROC curves)
+matplotlib==3.10.6
+openpyxl==3.1.5
+tabulate==0.10.0      # used through pandas when stage1 writes PAPER_VALUES.md

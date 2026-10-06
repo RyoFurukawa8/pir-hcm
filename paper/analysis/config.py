@@ -14,7 +14,7 @@ config.py — 完全置換版（改良バッチ v3）
   ・時間分解QC閾値（par飽和 / PAI rest成分ジャンプ / parレンジ）
   ・Fig1 は現行設定どおり 260626_ch4 / high / 150秒を使用する。
 第4版からの継続:
-  ・Old群を完全排除（RECORDS_OLD=[] 固定・stage1で在庫チェックを print）
+  ・対象外の記録を完全排除（RECORDS_OLD=[] 固定・stage1で在庫チェックを print）
   ・センサーセット識別を sensor_id 先頭文字（X/Y）に固定（SENSOR_SET_ORDER）
   ・good_cut 掃引を 0.70 の下側にも拡張（下限の正当化用）
   ・探索用計算 X1-X10 のフラグとレンジ
@@ -187,7 +187,7 @@ TEMPORAL_PAI_REST_JUMP_THRESHOLD = 2.0
 TEMPORAL_PAR_RANGE_THRESHOLD = 0.50
 
 # =============================================================== 9. レコード
-# 若齢30Hzのみ。老齢10Hz予備データは論文対象外（空固定・stage1で在庫チェック）。
+# 本研究の対象は 30 Hz で記録した 4 セッションのみ。対象外の記録は空固定（stage1 で在庫チェック）。
 RECORDS_YOUNG = ["260626", "260629", "260702", "260706"]
 RECORDS_OLD = []
 

@@ -2,9 +2,9 @@ __pycache__/
 *.pyc
 .venv/
 stage1_error.log
-# 再生成物（公開物には含めない）
+# Regenerated outputs (not part of the release)
 paper/intermediate/paper_pipeline_outputs/outputs/
-# 旧版の残骸・生データを誤って入れない
+# Keep stale copies and raw recordings out of the repository
 *.bak*
 *.lvm
 *.tdms
