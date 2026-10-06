@@ -1,10 +1,10 @@
 # PIR-HCM: home-cage activity monitoring from the analog signal of a commercial PIR sensor
 
-> **DRAFT (2026-10-05, for v1.0.0).** Remaining before release: the copyright holder in `LICENSE` / `LICENSE-DATA`, the article DOI and bibliographic details (here and in `CITATION.cff`), `date-released` in `CITATION.cff`, and the publication of the Zenodo record. Remove this line at release.
+> **Status.** The article has been submitted to *Sensors* and is under review. The version described in the submitted article is tagged `submitted-2026-10-06`. On acceptance, the final version will be archived at Zenodo under the reserved DOI 10.5281/zenodo.23008577, and the article DOI and bibliographic details will be added here and in `CITATION.cff`.
 
 This repository accompanies the article:
 
-> Furukawa, R.; Tomita, J.; Kume, K. *Non-invasive active/rest classification and continuous graded activity quantification in mice using analog passive-infrared sensing and unsupervised Gaussian mixture modelling.* **Sensors** (MDPI), 2026. DOI: TODO (assigned on acceptance)
+> Furukawa, R.; Tomita, J.; Kume, K. *Non-invasive active/rest classification and continuous graded activity quantification in mice using analog passive-infrared sensing and unsupervised Gaussian mixture modelling.* Submitted to **Sensors** (MDPI), 2026.
 
 It contains
 
@@ -145,12 +145,12 @@ aggregate added when the table was typeset. The note that `stage2_tables.py` wri
 single false negative to the averaging of the fold thresholds, whereas the article (Section 3.5) states that this
 channel also fails in the only fold in which it is held out.
 
-During peer review the contents of this repository are provided to the reviewers as a supplementary file submitted
-with the article; the GitHub repository and the Zenodo archive are made public upon acceptance of the article.
+This repository is public. The version described in the submitted article is tagged `submitted-2026-10-06`.
+On acceptance, the final version will be archived at Zenodo under the reserved DOI 10.5281/zenodo.23008577.
 
 ## 6. Citation
 
-See `CITATION.cff`. Please cite the article and the Zenodo archive (DOI: [10.5281/zenodo.23008577](https://doi.org/10.5281/zenodo.23008577); the record becomes accessible when the archive is made public).
+See `CITATION.cff`. Please cite the article. Until the Zenodo archive is published (on acceptance; reserved DOI 10.5281/zenodo.23008577), please refer to this repository at the tag `submitted-2026-10-06`.
 
 Source repository: <https://github.com/RyoFurukawa8/pir-hcm>
 

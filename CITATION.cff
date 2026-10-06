@@ -13,6 +13,7 @@ authors:
     given-names: Kazuhiko
     affiliation: "Nagoya City University"
 version: "1.0.0"
+# Reserved Zenodo DOI; the archive is published on acceptance of the article.
 doi: "10.5281/zenodo.23008577"
 repository-code: "https://github.com/RyoFurukawa8/pir-hcm"
 keywords:
@@ -25,6 +26,7 @@ preferred-citation:
   title: "Non-invasive active/rest classification and continuous graded activity quantification in mice using analog passive-infrared sensing and unsupervised Gaussian mixture modelling"
   journal: "Sensors"
   year: 2026
+  status: submitted
   authors:
     - family-names: Furukawa
       given-names: Ryo
