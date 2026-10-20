@@ -1,6 +1,6 @@
 # PIR-HCM: home-cage activity monitoring from the analog signal of a commercial PIR sensor
 
-> **Status.** The article has been submitted to *Sensors* and is under review. The version described in the submitted article is tagged `submitted-2026-10-06`. On acceptance, the final version will be archived at Zenodo under the reserved DOI 10.5281/zenodo.23008577, and the article DOI and bibliographic details will be added here and in `CITATION.cff`.
+> **Status.** The article has been submitted to *Sensors* and is under review. The version described in the submitted article is tagged `submitted`. On acceptance, the final version will be archived at Zenodo under the reserved DOI 10.5281/zenodo.23008577, and the article DOI and bibliographic details will be added here and in `CITATION.cff`.
 
 This repository accompanies the article:
 
@@ -31,6 +31,10 @@ undistributed script are marked `legacy stage2`. The renaming and its verificati
 `【要確認】` ("to be checked"). These are working notes made while the analysis was run; they do not indicate unfinished work.
 The one in `config.py` is explained in `paper/provenance/NOTES.md` (Section 4).
 
+**Terms.** The article writes the PIR active rate as **PIR-AR** and the NanoTag-measured active rate as **NT-AR**.
+The code, the column names of `int_*.csv` and of the table CSVs, and `paper/provenance/` keep the original names
+`par` (`pir_active_rate`) and `nar`.
+
 **Generative AI.** Parts of the analysis code were written with the assistance of generative AI tools; the design,
 verification and final responsibility for the code rest with the authors. The tools are listed in Section 2.9 of the article.
 
@@ -40,11 +44,12 @@ verification and final responsibility for the code rest with the authors. The to
 
 The files in `paper/analysis/` are archived **as they were run** to produce the article.
 They have not been refactored, reformatted or optimised, because any behavioural change would break the
-correspondence with the published values. The edits are of three kinds: the replacement of the author's local
+correspondence with the published values. The edits are of four kinds: the replacement of the author's local
 path strings (4 lines); the renaming of the stage scripts, which also rewrote 34 references to the undistributed
 script (one of them, `stage1_compute.py:3859`, is a file-name string rather than a comment); and the rewording of
-two comments in `config.py` and of one log message and one docstring line in `stage3_figures.py`. All are
-documented, with checksums and with a verification that the outputs are byte-identical, in `paper/analysis/PATCHES.md`.
+two comments in `config.py` and of one log message and one docstring line in `stage3_figures.py`; and, on
+2026-10-19 and 2026-10-20, the change of 60 text labels drawn in the figures so that they use the terms of the
+article (no change to any computation or value). All are documented, with checksums and with a verification that the outputs are byte-identical, in `paper/analysis/PATCHES.md`.
 
 | Script | Input | Output |
 |---|---|---|
@@ -82,8 +87,10 @@ Execution order with raw data: `stage1_compute.py` → `stage2_tables.py` → `s
 Running the two commands above on the distributed `intermediate__good070` completed without error (stage2 < 1 s, stage3 about 2 min).
 All 51 caption values in `outputs/captions/figure_values_good070.csv` matched `paper/provenance/figure_values_good070.csv`;
 the two files differ only in line endings (the distributed copy was written on Windows, CRLF). All 9 tables were generated, and all
-21 figures of good070 (6 main, 8 supplementary, 7 exploratory) were produced with every panel reported OK. Images were not compared
-pixel-by-pixel. In `TableS1.csv` (Table S6 of the article), the last floating-point digit (~1e-16) of some cells may differ across library versions.
+21 figures of good070 (6 main, 8 supplementary, 7 exploratory) were produced with every panel reported OK.
+On 2026-10-20 Figures 2–6 and S1–S8 produced by the distributed `stage3_figures.py` were compared pixel-by-pixel with
+those in the article and were identical apart from about 1,900 pixels of legend anti-aliasing in Figure S6 (Figure 1 of the article combines photographs with the generated panel (c);
+see `paper/analysis/PATCHES.md`, Section 7). In `TableS1.csv` (Table S6 of the article), the last floating-point digit (~1e-16) of some cells may differ across library versions.
 
 ### Integrity of the distributed files
 
@@ -145,18 +152,18 @@ aggregate added when the table was typeset. The note that `stage2_tables.py` wri
 single false negative to the averaging of the fold thresholds, whereas the article (Section 3.5) states that this
 channel also fails in the only fold in which it is held out.
 
-This repository is public. The version described in the submitted article is tagged `submitted-2026-10-06`.
+This repository is public. The version described in the submitted article is tagged `submitted`.
 On acceptance, the final version will be archived at Zenodo under the reserved DOI 10.5281/zenodo.23008577.
 
 ## 6. Citation
 
-See `CITATION.cff`. Please cite the article. Until the Zenodo archive is published (on acceptance; reserved DOI 10.5281/zenodo.23008577), please refer to this repository at the tag `submitted-2026-10-06`.
+See `CITATION.cff`. Please cite the article. Until the Zenodo archive is published (on acceptance; reserved DOI 10.5281/zenodo.23008577), please refer to this repository at the tag `submitted`.
 
 Source repository: <https://github.com/RyoFurukawa8/pir-hcm>
 
 ## 7. Funding
 
-This work was supported by JST SPRING, Japan Grant Number JPMJSP2130.
+This work was supported by JST SPRING, Japan Grant Number JPMJSP2130, and JSPS KAKENHI Grant Number JP24K02065(KK), JP23K05855(JT).
 
 ## 8. Licence
 

@@ -89,5 +89,5 @@ contained in this repository.
 
 ## 5. `VALUE_PROVENANCE.md`
 
-This table was edited for publication and checked against the final version of the article (2026-10-06).
-本表は公開用に編集し、論文の最終版（2026-10-06）と照合した。
+This table was edited for publication and checked against the final version of the article (2026-10-13).
+本表は公開用に編集し、論文の最終版（2026-10-13）と照合した。

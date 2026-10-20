@@ -1177,7 +1177,7 @@ def render_state_gmm_panel(ax, ch0, chan, sh, gp, mode="global", qc_label="",
                 color=C_CTRL_NAVY,
                 alpha=0.55,
                 edgecolor="none",
-                label="Rest (NanoTag=0)",
+                label="Rest (NanoTag = 0)",
                 density=False,
                 zorder=2,
             )
@@ -1196,7 +1196,7 @@ def render_state_gmm_panel(ax, ch0, chan, sh, gp, mode="global", qc_label="",
             bins=bins,
             color=C_CTRL_NAVY,
             alpha=0.6,
-            label="Rest (NanoTag=0)",
+            label="Rest (NanoTag = 0)",
             density=True,
             zorder=2,
         )
@@ -1235,7 +1235,7 @@ def render_state_gmm_panel(ax, ch0, chan, sh, gp, mode="global", qc_label="",
                 y = _norm * _grp_n * _bw_curve
             else:
                 y = comp_y
-            ax.plot(xx, y, color=col, lw=1.8, label=f"GMM {comp} component", zorder=4)
+            ax.plot(xx, y, color=col, lw=1.8, label=f"GMM {comp.capitalize()} component", zorder=4)
         ax.axvline(
             float(gpc["boundary"].iloc[0]),
             color="black",
@@ -1274,13 +1274,13 @@ def render_state_gmm_panel(ax, ch0, chan, sh, gp, mode="global", qc_label="",
         extra = [
             Line2D([0], [0], color=C_MAIN, lw=1.7,
                    ls=(0, (1.8, 3.4)), dash_capstyle="round",
-                   label="GMM-estimated rest μ"),
+                   label="GMM-estimated Rest μ"),
         ]
         if _nmu is not None and np.isfinite(_nmu):
             extra.append(
                 Line2D([0], [0], color=C_CTRL_NAVY, lw=1.7,
                        ls=(0, (1.8, 3.4)), dash_capstyle="round",
-                       label="NanoTag empirical rest μ")
+                       label="NanoTag empirical Rest μ")
             )
         ax.legend(handles=handles + extra, fontsize=7, loc="upper right")
 
@@ -1416,14 +1416,14 @@ def fig1(ctx: Ctx) -> None:
         ax_raw.text(0.5, 1.02, ph.capitalize(), transform=ax_raw.transAxes,
                     ha="center", va="bottom", fontsize=9, fontweight="bold")
         if i == 0:
-            ax_raw.set_ylabel("PIR (V)" if use_adc else "PIR (median-centered)")
+            ax_raw.set_ylabel("Raw signal (V)" if use_adc else "Raw signal (median-centered)")
 
         ax_lpf = axes[1, i]
         ax_lpf.plot(_x, ylpf, color="black", lw=1.3, antialiased=True)
         ax_lpf.set_ylim(ylo_lpf - pad_lpf, yhi_lpf + pad_lpf)
         ax_lpf.set_xlim(0, getattr(config, "RAW_DRAW_WINDOW_S", 150))
         if i == 0:
-            ax_lpf.set_ylabel("1-Hz LPF (V)" if use_adc else "1-Hz LPF (median-centered)")
+            ax_lpf.set_ylabel("1 Hz low-pass filtered (V)" if use_adc else "1 Hz low-pass filtered (median-centered)")
         ax_lpf.set_xlabel("Time (s)")
 
         v = y.dropna().values.astype(float)
@@ -1541,7 +1541,7 @@ def fig2(ctx: Ctx) -> None:
             alpha=0.8,
             label="NanoTag (right axis)",
         )
-        axa2.set_ylabel("NanoTag activity (count / 10 min)", color=C_CTRL_NAVY)
+        axa2.set_ylabel("NanoTag activity (counts / 10 min)", color=C_CTRL_NAVY)
         axa2.tick_params(axis="y", labelcolor=C_CTRL_NAVY)
         _h1, _l1 = ax.get_legend_handles_labels()
         _h2, _l2 = axa2.get_legend_handles_labels()
@@ -1571,7 +1571,7 @@ def fig2(ctx: Ctx) -> None:
                 ax.axvspan(h, h + 1, color="0.88", zorder=0, lw=0)
             yp = d["pir_norm"] if "pir_norm" in d else d["pir_mean"]
             yn = d["nano_norm"] if "nano_norm" in d else d["nano_mean"]
-            ax.plot(d["hour"], yp, "-o", color=C_MAIN, ms=3, label="PIR (normalized)")
+            ax.plot(d["hour"], yp, "-o", color=C_MAIN, ms=3, label="PAI (normalized)")
             ax.plot(
                 d["hour"], yn, "-s", color=C_CTRL_NAVY, ms=3, label="NanoTag (normalized)"
             )
@@ -1627,7 +1627,7 @@ def fig3(ctx: Ctx) -> None:
             edgecolor="none",
         )
         ax.set_xlabel("PAI")
-        ax.set_ylabel("NanoTag activity (count / 10 min)")
+        ax.set_ylabel("NanoTag activity (counts / 10 min)")
         cir = ci_of(ctx, metric_name)
         if cir:
             pt, lo, hi = cir
@@ -1882,8 +1882,8 @@ def fig4(ctx: Ctx) -> None:
         ax.hist(vals, bins=16, color=C_CTRL_NAVY, alpha=0.55,
                 edgecolor="black", linewidth=0.6)
         medv = float(np.median(vals))
-        ax.axvline(medv, color=C_MAIN, lw=1.4, label=f"median = {medv:.3f}")
-        ax.set_xlabel("Absolute difference in rest μ (PAI)")
+        ax.axvline(medv, color=C_MAIN, lw=1.4, label=f"Median = {medv:.3f}")
+        ax.set_xlabel("Absolute difference in Rest μ (PAI)")
         ax.set_ylabel("Channels (n)")
         ax.yaxis.set_major_locator(mticker.MaxNLocator(integer=True))
         ax.legend(fontsize=7)
@@ -1936,22 +1936,22 @@ def fig5(ctx: Ctx) -> None:
         if chan is None:
             raise LookupError("int_channel.csv missing")
         thr = get_threshold(ctx, chan)
-        for flag, col, lab in [(1, C_MAIN, "QC pass"), (0, C_CTRL_GRAY, "QC fail")]:
+        for flag, col, lab in [(1, C_MAIN, "QC-pass"), (0, C_CTRL_GRAY, "QC-fail")]:
             s = chan[chan["qc1_pass"] == flag]
             ax.scatter(s["pir_active_rate"], s["F1_state"], s=20, color=col, label=lab,
                        alpha=0.85, edgecolor="white", linewidth=0.4,
                        marker="o" if flag == 1 else "^")
         ax.axvline(thr, color="black", ls="--", lw=1.0)
         ax.axhline(GOOD_F1, color="grey", ls=":", lw=0.8)
-        ax.set_xlabel("PIR active rate (par)")
+        ax.set_xlabel("PIR active rate (PIR-AR)")
         ax.set_ylabel("State F1")
-        ax.set_title(f"(a) par vs F1\nAUC={auc_of(ctx, 'pir_active_rate'):.2f}, thr={thr:.3f}",
+        ax.set_title(f"(a) PIR-AR vs F1\nAUC={auc_of(ctx, 'pir_active_rate'):.2f}, thr={thr:.3f}",
                      fontsize=7.8)
         _handles = [
             Line2D([0], [0], color=C_MAIN, marker="o", ls="none",
-                   ms=4, label="QC pass"),
+                   ms=4, label="QC-pass"),
             Line2D([0], [0], color=C_CTRL_GRAY, marker="^", ls="none",
-                   ms=4, label="QC fail"),
+                   ms=4, label="QC-fail"),
             Line2D([0], [0], color="black", ls="--", lw=1.0,
                    label="QC threshold"),
             Line2D([0], [0], color="grey", ls=":", lw=0.8,
@@ -1980,11 +1980,11 @@ def fig5(ctx: Ctx) -> None:
                           "floor_rate": "Floor rate", "pir_active_rate": "PIR active rate"}
         ax.set_xticklabels([_metric_labels.get(str(v), str(v).replace("_", " "))
                             for v in sub["qc_metric"]], rotation=30, ha="right", fontsize=7)
-        ax.axhline(0.5, color="black", ls="--", lw=1.0, label="chance level (AUC = 0.5)")
+        ax.axhline(0.5, color="black", ls="--", lw=1.0, label="Chance level (AUC = 0.5)")
         zero_baseline(ax, list(sub["auc"].astype(float)))
         for _i, _r in enumerate(sub.itertuples()):
             if float(_r.auc) < 0.5:
-                ax.text(_i, float(_r.auc) + 0.02, "inverse\n(AUC < 0.5)", ha="center",
+                ax.text(_i, float(_r.auc) + 0.02, "Inverse\n(AUC < 0.5)", ha="center",
                         va="bottom", fontsize=7, color="0.25")
         ax.set_ylabel(f"AUC (F1 ≥ {GOOD_F1:.2f})")
         ax.legend(fontsize=7, loc="upper left")
@@ -2029,10 +2029,10 @@ def fig5(ctx: Ctx) -> None:
         q = chan[chan["qc1_pass"] == 1]
         f_qc = stat_fn(q, "F1_state").dropna().values
         groups_d = [
-            {"label": f"All (N={len(f_all)})", "values": f_all,
+            {"label": f"All (N = {len(f_all)})", "values": f_all,
              "value": ci_all[0] if ci_all else None,
              "ci": (ci_all[1], ci_all[2]) if ci_all else None},
-            {"label": f"QC pass (N={len(f_qc)})", "values": f_qc,
+            {"label": f"QC-pass (N = {len(f_qc)})", "values": f_qc,
              "value": ci_qc[0] if ci_qc else None,
              "ci": (ci_qc[1], ci_qc[2]) if ci_qc else None},
         ]
@@ -2068,7 +2068,7 @@ def fig5(ctx: Ctx) -> None:
         ax.set_xlabel("Channel quality", fontsize=7.5)
         ax.set_ylabel("QC decision", fontsize=7.5)
         subtitle = f"PPV={r0['PPV']:.3f} sens={r0['sensitivity']:.3f}"
-        ax.set_title(f"(d) Confusion (par-only QC)\n{subtitle}", fontsize=9)
+        ax.set_title(f"(d) Confusion (PIR-AR-only QC)\n{subtitle}", fontsize=9)
         ctx.value("fig5_confusion",
                   f"TP={int(r0['TP'])} FP={int(r0['FP'])} FN={int(r0['FN'])} TN={int(r0['TN'])}",
                   "par_only")
@@ -2093,11 +2093,11 @@ def fig5(ctx: Ctx) -> None:
         ax.bar([0, 1], shares, color=["#1f4e79", "#8fa9c4"],
                edgecolor="black", linewidth=0.6, width=0.6)
         ax.set_xticks([0, 1])
-        ax.set_xticklabels(["FN\n(missed active)", "FP\n(false active)"], fontsize=7)
+        ax.set_xticklabels(["FN\n(missed Active)", "FP\n(false Active)"], fontsize=7)
         ax.set_ylabel("Share of errors (%)")
         ax.set_ylim(0, 112)
         for i, (shv, ct) in enumerate(zip(shares, [tot_fn, tot_fp])):
-            ax.text(i, shv + 1.5, f"{shv:.1f}%\n(n={int(ct)})", ha="center", fontsize=7)
+            ax.text(i, shv + 1.5, f"{shv:.1f}%\n(n = {int(ct):,})", ha="center", fontsize=7)
         ax.set_title("(e) Errors are mostly misses\n(PIR is conservative)", fontsize=9)
         ctx.value("fig5_fn_share_pct", round(shares[0], 1), f"FN={int(tot_fn)} FP={int(tot_fp)}")
         ctx.log(f"  (e) FN share={shares[0]:.1f}% FP share={shares[1]:.1f}% "
@@ -2216,9 +2216,9 @@ def figS1(ctx: Ctx) -> None:
             d = ctx.load("int_calibration.csv")
             if d is None or d.empty:
                 raise LookupError("int_calibration.csv missing")
-            for t, col, lab in [("empty", C_CTRL_GRAY, "Empty box"),
-                                ("active_rest", C_CTRL_NAVY, "Occupied, rest"),
-                                ("active_move", C_MAIN, "Occupied, active")]:
+            for t, col, lab in [("empty", C_CTRL_GRAY, "Empty cage"),
+                                ("active_rest", C_CTRL_NAVY, "Occupied, Rest"),
+                                ("active_move", C_MAIN, "Occupied, Active")]:
                 v = d[d["type"] == t]["log_lp_var"].dropna()
                 if len(v):
                     ax.hist(v, bins=30, alpha=0.55, color=col, label=lab, density=True)
@@ -2227,7 +2227,7 @@ def figS1(ctx: Ctx) -> None:
             ax.set_xlabel("PAI")
             ax.set_ylabel("Density")
             ax.legend(fontsize=7)
-            ax.set_title("(a) Empty box vs occupied (rest/active) calibration", fontsize=9)
+            ax.set_title("(a) Empty cage vs occupied (Rest/Active) calibration", fontsize=9)
 
         def pb(ax):
             feat_a = [("raw_lp_var", "Linear variance"), ("log_lp_var", "Log variance (PAI)")]
@@ -2396,11 +2396,11 @@ def figS2(ctx: Ctx) -> None:
             ax.axvline(config.BIN_STATE_SEC, color=C_MAIN, ls=":", lw=1.0)
             ax.axvline(config.BIN_INTENSITY_SEC, color=C_CTRL_NAVY, ls="-.", lw=1.0)
             # Operating points are annotated directly: a 5-entry legend does not fit.
-            ax.annotate(f"state operating point\n({int(config.BIN_STATE_SEC)} s)",
+            ax.annotate(f"State operating point\n({int(config.BIN_STATE_SEC)} s)",
                         xy=(config.BIN_STATE_SEC, 0.02), xycoords=("data", "axes fraction"),
                         xytext=(4, 0), textcoords="offset points",
                         fontsize=5.8, color=C_MAIN, ha="left", va="bottom")
-            ax.annotate(f"intensity operating point\n({int(config.BIN_INTENSITY_SEC)} s)",
+            ax.annotate(f"Intensity operating point\n({int(config.BIN_INTENSITY_SEC)} s)",
                         xy=(config.BIN_INTENSITY_SEC, 0.02), xycoords=("data", "axes fraction"),
                         xytext=(-4, 0), textcoords="offset points",
                         fontsize=5.8, color=C_CTRL_NAVY, ha="right", va="bottom")
@@ -2503,9 +2503,9 @@ def figS3(ctx: Ctx) -> None:
             _kmin = int(ks[int(np.nanargmin(yv))]) if len(yv) else 2
             from matplotlib.patches import Patch as _Patch
             ax.legend(handles=[_Patch(facecolor=C_MAIN, hatch=H_MAIN, edgecolor="black",
-                                      linewidth=0.6, label="adopted (K = 2)"),
+                                      linewidth=0.6, label="Adopted (K = 2)"),
                                _Patch(facecolor=C_CTRL_GRAY, edgecolor="black",
-                                      linewidth=0.6, label=f"not adopted (BIC minimum: K = {_kmin})")],
+                                      linewidth=0.6, label=f"Not adopted (BIC minimum: K = {_kmin})")],
                       fontsize=5.6, loc="upper right", framealpha=0.85)
             ctx.log(f"    [S3] BIC minimum is K={_kmin}; K=2 is adopted by elbow + interpretability, "
                     f"not by BIC minimum")
@@ -2665,7 +2665,7 @@ def figS4(ctx: Ctx) -> None:
         for i in range(n):
             r, c = divmod(i, cols)
             if c == 0:
-                ax[i].set_ylabel("NanoTag activity (count / 10 min)", fontsize=8)
+                ax[i].set_ylabel("NanoTag activity (counts / 10 min)", fontsize=8)
             if (r == rows - 1) or (i + cols >= n):
                 ax[i].set_xlabel("PAI", fontsize=8)
 
@@ -2718,7 +2718,7 @@ def figS5(ctx: Ctx) -> None:
                     fpr = np.concatenate([[0], np.cumsum(1 - yy) / max((1 - yy).sum(), 1)])
                     return fpr, tpr, None
             drew = 0
-            for metric, label, col, ls in [("pir_active_rate", "par", C_MAIN, "-"),
+            for metric, label, col, ls in [("pir_active_rate", "PIR-AR", C_MAIN, "-"),
                                            ("snr", "SNR", C_CTRL_GRAY, "--"),
                                            ("pai_contrast", "PAI contrast", C_CTRL_GRAY, "-.")]:
                 if metric not in chan:
@@ -2736,7 +2736,7 @@ def figS5(ctx: Ctx) -> None:
                 if not np.isfinite(ar):
                     ctx.log(f"  {label}: AUC undefined, series omitted")
                     continue
-                ax.plot(fpr, tpr, color=col, ls=ls, lw=1.5, label=f"{label} (AUC={ar:.2f})")
+                ax.plot(fpr, tpr, color=col, ls=ls, lw=1.5, label=f"{label} (AUC = {ar:.2f})")
                 drew += 1
             if not drew:
                 raise LookupError("ROC を描ける指標が無い")
@@ -2761,10 +2761,10 @@ def figS5(ctx: Ctx) -> None:
             upper = ((2 - c) / c) * x
             ax.scatter(d["nanotag_active_rate"], d["pir_active_rate"], s=28, alpha=.8,
                        color=C_CTRL_NAVY)
-            ax.plot(x, lower, "-", color="black", lw=1.3, label="algebraic lower bound")
-            ax.plot(x, upper, "--", color="black", lw=1.3, label="algebraic upper bound")
-            ax.set_xlabel("NanoTag active rate")
-            ax.set_ylabel("par (PIR active rate)")
+            ax.plot(x, lower, "-", color="black", lw=1.3, label="Algebraic lower bound")
+            ax.plot(x, upper, "--", color="black", lw=1.3, label="Algebraic upper bound")
+            ax.set_xlabel("NanoTag active rate (NT-AR)")
+            ax.set_ylabel("PIR active rate (PIR-AR)")
             ax.legend(fontsize=6.5)
             ax.set_title(f"(b) F1 >= {c:.2f} feasibility band (good_cut={c:.2f})", fontsize=9)
             nar = d["nanotag_active_rate"].astype(float).to_numpy()
@@ -2863,14 +2863,14 @@ def figS6(ctx: Ctx) -> None:
             ref = get_threshold(ctx, chan)
             ax.plot(x, vals, linestyle="none", marker="o", ms=5.5,
                     markerfacecolor=C_ACCENT, markeredgecolor=C_ACCENT,
-                    label="jackknife (remaining 7 mice)")
+                    label="Jackknife (remaining 7 mice)")
             if np.isfinite(ref):
-                ax.axhline(ref, color="black", lw=1.2, label=f"all-8 value = {ref:.3f}")
+                ax.axhline(ref, color="black", lw=1.2, label=f"All-8 value = {ref:.3f}")
             ax.set_xticks(x)
             ax.set_xticklabels([_mouse_label(v) for v in d["fold_excluded_mouse"]], rotation=45,
                                ha="right", fontsize=6.5)
             ax.set_xlabel("Held-out mouse")
-            ax.set_ylabel("QC threshold (par), remaining 7 mice")
+            ax.set_ylabel("QC threshold (PIR-AR), remaining 7 mice")
             ax.set_title("(a) QC threshold: jackknife stability", fontsize=8.5)
             ax.legend(fontsize=5.7)
             center_ylim(ctx, ax, S5_YLIM["a"][0], S5_YLIM["a"][1],
@@ -2892,8 +2892,8 @@ def figS6(ctx: Ctx) -> None:
             x = np.arange(len(mice))
             ax.plot(x, vals, linestyle="none", marker="o", ms=5.5,
                     markerfacecolor=C_CTRL_NAVY, markeredgecolor=C_CTRL_NAVY,
-                    label="jackknife (remaining 7 mice)")
-            ax.axhline(ref, color="black", lw=1.2, label=f"all-8 value = {ref:.3f}")
+                    label="Jackknife (remaining 7 mice)")
+            ax.axhline(ref, color="black", lw=1.2, label=f"All-8 value = {ref:.3f}")
             ax.set_xticks(x)
             ax.set_xticklabels([_mouse_label(v) for v in mice], rotation=45, ha="right", fontsize=6.5)
             ax.set_xlabel("Held-out mouse")
@@ -2919,12 +2919,12 @@ def figS6(ctx: Ctx) -> None:
             vals = d["holdout_f1"].to_numpy(float)
             ax.plot(x, vals, color=C_MAIN, lw=1.2, linestyle="none", marker="^", ms=6.0,
                     markerfacecolor=C_MAIN, markeredgecolor=C_MAIN, markeredgewidth=1.1,
-                    label="held-out mouse")
+                    label="Held-out mouse")
             ci_qc = ci_of(ctx, metric_f1)
             ref = ci_qc[0] if ci_qc else np.nan
             if np.isfinite(ref):
                 ax.axhline(ref, color="black", lw=1.2,
-                           label=f"operational F1 = {ref:.2f}")
+                           label=f"Operational F1 = {ref:.2f}")
             ax.set_xticks(x)
             ax.set_xticklabels([_mouse_label(v) for v in d["fold_excluded_mouse"]], rotation=45,
                                ha="right", fontsize=6.5)
@@ -2972,9 +2972,9 @@ def figS7(ctx: Ctx) -> None:
             r_pass = stat_fn_r(chan[chan["qc1_pass"] == 1], "intensity_r").dropna().values
             r_all = stat_fn_r(chan, "intensity_r").dropna().values
             groups = [
-                {"label": f"QC fail\n(N={len(r_fail)})", "values": r_fail},
-                {"label": f"QC pass\n(N={len(r_pass)})", "values": r_pass},
-                {"label": f"All\n(N={len(r_all)})", "values": r_all},
+                {"label": f"QC-fail\n(N = {len(r_fail)})", "values": r_fail},
+                {"label": f"QC-pass\n(N = {len(r_pass)})", "values": r_pass},
+                {"label": f"All\n(N = {len(r_all)})", "values": r_all},
             ]
             bar_dots(ax, groups, colors=[C_CTRL_GRAY, C_MAIN, C_CTRL_NAVY],
                      hatches=[H_GRAY, H_MAIN, H_NAVY], err="sd", center=_agg_r)
@@ -2997,7 +2997,7 @@ def figS7(ctx: Ctx) -> None:
             bar_dots(ax, groups_b, colors=[C_CTRL_NAVY] * len(groups_b),
                      hatches=[H_MAIN] * len(groups_b), err="sd", center="mean")
             ax.axhline(GOOD_F1, color="black", ls=":", lw=0.9,
-                       label=f"good threshold (F1 = {GOOD_F1:.2f})")
+                       label=f"Good-channel criterion (F1 ≥ {GOOD_F1:.2f})")
             ax.legend(fontsize=6.0)
             plt.setp(ax.get_xticklabels(), rotation=45, ha="right", fontsize=6.5)
             ax.set_ylabel("State F1 (per mouse: ch mean ± SD)")
@@ -3082,18 +3082,18 @@ def figS8(ctx: Ctx) -> None:
                 for _i, (_ch, _g) in enumerate(d.groupby("ch")):
                     _g = _g.sort_values("n_active_bins_state")
                     ax.plot(_g["n_active_bins_state"], _g["par_so_far"], lw=.45, alpha=.25,
-                            label="individual channels" if _i == 0 else None)
+                            label="Individual channels" if _i == 0 else None)
             ax.plot(agg["n_active_bins_state"], agg["par_mean"], "-o", color=C_MAIN, ms=3)
             ax.fill_between(agg["n_active_bins_state"], agg["par_mean"] - agg["par_sd"],
                             agg["par_mean"] + agg["par_sd"], color=C_MAIN, alpha=0.2,
-                            label="mean ± SD across mice (N=8)")
+                            label="Mean ± SD across mice (N = 8)")
             if pd.notna(thr):
                 ax.axhline(thr, color="black", ls="--", lw=1.0,
                            label=f"QC threshold = {thr:.3f}")
             ax.legend(fontsize=6.3, loc="upper right", framealpha=0.85)
-            ax.set_xlabel("Cumulative active bins")
-            ax.set_ylabel("par (mean ± SD across mice)")
-            ax.set_title("(a) par vs cumulative active bins", fontsize=9)
+            ax.set_xlabel("Cumulative Active bins")
+            ax.set_ylabel("PIR-AR (mean ± SD across mice)")
+            ax.set_title("(a) PIR-AR vs cumulative Active bins", fontsize=9)
             if has_hours and stable.get("par") is not None:
                 hrow = agg[agg["n_active_bins_state"] == stable["par"]]
                 if len(hrow):
@@ -3106,16 +3106,16 @@ def figS8(ctx: Ctx) -> None:
                 for _i, (_ch, _g) in enumerate(d.groupby("ch")):
                     _g = _g.sort_values("n_active_bins_state")
                     ax.plot(_g["n_active_bins_state"], _g["f1_so_far"], lw=.45, alpha=.25,
-                            label="individual channels" if _i == 0 else None)
+                            label="Individual channels" if _i == 0 else None)
             ax.plot(agg["n_active_bins_state"], agg["f1_mean"], "-o", color=C_CTRL_NAVY, ms=3)
             ax.fill_between(agg["n_active_bins_state"], agg["f1_mean"] - agg["f1_sd"],
                             agg["f1_mean"] + agg["f1_sd"], color=C_CTRL_NAVY, alpha=0.2,
-                            label="mean ± SD across mice")
+                            label="Mean ± SD across mice (N = 8)")
             ax.axhline(GOOD_F1, color="black", ls=":", lw=0.9,
-                       label=f"good threshold (F1 = {GOOD_F1:.2f})")
+                       label=f"Good-channel criterion (F1 ≥ {GOOD_F1:.2f})")
             ax.legend(fontsize=6.3, loc="upper right", framealpha=0.85)
-            ax.set_xlabel("Cumulative active bins")
-            ax.set_ylabel("F1 (mean ± SD across mice)")
+            ax.set_xlabel("Cumulative Active bins")
+            ax.set_ylabel("State F1 (mean ± SD across mice)")
             ax.set_title("(b) F1 vs cumulative active bins", fontsize=9)
 
         ok += draw(ctx, axes[0], "a", pa)
