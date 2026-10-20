@@ -31,7 +31,7 @@ text. The contents are unchanged; only the label differs. The supplementary figu
 |---|---|---|
 | `TableS1` | **Table S6** | Sensitivity to the definition of a good channel |
 | `TableS2` | **Table S1** | Sensitivity to the definition of the reference label |
-| `TableS3` | **Table S5** | Reference-free temporal guard complementing the par gate |
+| `TableS3` | **Table S5** | Reference-free temporal guard complementing the PIR-AR gate |
 | `TableS4` | Table S4 | Detection ratio by record and dark-phase block |
 | `TableS5` | **Table S3** | Leave-one-mouse-out fold-by-fold breakdown |
 | `TableS6` | **Table S2** | Point estimates of the main outcomes and their 95% confidence intervals |
@@ -89,5 +89,5 @@ contained in this repository.
 
 ## 5. `VALUE_PROVENANCE.md`
 
-This table was edited for publication and checked against the final version of the article (2026-10-13).
-本表は公開用に編集し、論文の最終版（2026-10-13）と照合した。
+This table was edited for publication and checked against the final version of the article (2026-10-20).
+本表は公開用に編集し、論文の最終版（2026-10-20）と照合した。

@@ -1,7 +1,7 @@
 # VALUE_PROVENANCE — 数値の出所対応表 / Value-to-source map
 
 **English summary.** This table maps each decimal value printed in the article and in the
-Supplementary Materials (final versions of 2026-10-13) to the file and column in this repository
+Supplementary Materials (final versions of 2026-10-20) to the file and column in this repository
 from which it is computed, and to the aggregation used. Locations follow the numbering of the
 article (main-text sections §, Figures and Tables; Supplementary Figures S, Tables S and Text S).
 File names such as `TableS1.csv` are the names emitted by the frozen code; their numbers in the
@@ -12,7 +12,7 @@ pairs, folds) and integer percentages are not listed. Judgement: ✓ source conf
 
 ## 表について
 
-- 対象は、論文の最終版（本文・補足資料、2026-10-13）に現れる小数を含む値（343 行）。件数（整数）と整数のパーセントは含まない。
+- 対象は、論文の最終版（本文・補足資料、2026-10-20）に現れる小数を含む値（341 行）。件数（整数）と整数のパーセントは含まない。
 - 「出現箇所」は論文の番号で示す（本文の節 §・Figure・Table、補足資料の Figure S・Table S・Text S）。
 - 「出所」の `TableS*.csv` はコードが出力するファイル名で、論文の番号と一部異なる（`NOTES.md` の Section 1）。
   これらの行は、README の手順で再生成した表 CSV の該当セルと照合した。
@@ -37,7 +37,6 @@ pairs, folds) and integer percentages are not listed. Judgement: ✓ source conf
 | -0.151 | 本文 Table 3 | int_channel.csv[pir_active_rate] − [nanotag_active_rate] | 生値（260702_ch8、−0.1509） | ✓ |
 | -0.10 | 本文§3.6 | int_sensor_retest.csv[spearman] | metric = intensity_r の行（−0.0952） | ✓ |
 | -0.0372 | 本文§3.3 | int_placebo_pairs.csv[placebo_r] | same_session=True（n=96）の最小 | ✓ |
-| < 0.0001 | 本文§3.4 | int_seed_stability.csv[rest_mu]（bin_sec = 60） ／ int_seed_state_stability.csv[f1_state] | ch ごとシード間 SD の中央値（Rest 成分平均 0.000016、state F1 0.000000） | ✓ |
 | 0.0002 | SM Figure S3 | int_seed_stability.csv[rest_mu]（bin_sec = 60） | シードごとに 32 ch の Rest 成分平均を平均し、そのシード間 SD（0.000165） | ✓ |
 | 0.0005 | SM Figure S3 | int_seed_stability.csv[active_mu]（bin_sec = 60） | シードごとに 32 ch の Active 成分平均を平均し、そのシード間 SD（0.000544） | ✓ |
 | 0.001 | 本文§3.3 | int_channel.csv[phase_shuffle_p] | config.N_PHASE_PERM=1000 による下限 1/1001=0.000999 | ✓ |
@@ -91,7 +90,7 @@ pairs, folds) and integer percentages are not listed. Judgement: ✓ source conf
 | 0.2757 | 本文§3.5, SM Figure S6, SM Table S1, SM Table S3, SM Table S5, SM Text S2.2 | int_loso_thr.csv[qc1_threshold] | 生値（6 fold で同値） | ✓ |
 | 0.276 | 本文 Table 3 | int_channel.csv[pir_active_rate] | 生値（260702_ch8、0.2757） | ✓ |
 | 0.2831 | SM Table S5 | TableS3.csv[par]（260629_ch4 の行） | セル値 | ✓ |
-| 0.2852 | 本文§2.6.5, 本文§2.7.1, 本文§3.5, 本文 Figure 5, SM Figure S6, SM Figure S8, SM Table S1, SM Table S2, SM Table S3, SM Table S5, SM Table S6, SM Text S1.3, SM Text S2.2 | TableS1.csv[LOMO threshold (par)]（0.7 の行） / TableS6.csv[Point estimate]（QC threshold (par) の行） | セル値 | ✓ |
+| 0.2852 | 本文§2.6.5, 本文§3.5, 本文 Figure 5, SM Figure S6, SM Figure S8, SM Table S1, SM Table S2, SM Table S3, SM Table S5, SM Table S6, SM Text S1.3, SM Text S2.2 | TableS1.csv[LOMO threshold (par)]（0.7 の行） / TableS6.csv[Point estimate]（QC threshold (par) の行） | セル値 | ✓ |
 | 0.2981 | 本文§3.5, SM Table S3, SM Table S5, SM Text S2.2 | int_loso_thr.csv[qc1_threshold] | 生値（fold=mouse_8） | ✓ |
 | 0.2996 | 本文§3.5 | int_auc_boot.csv[diff_observed] | comparison=pir_active_rate - snr の生値 | ✓ |
 | 0.3 | 本文§2.2 | 文献値（[12] BISS0001） | 双方向レベル検出の下側閾値（0.3 Vdd） | ✓ |
@@ -164,7 +163,7 @@ pairs, folds) and integer percentages are not listed. Judgement: ✓ source conf
 | 0.6312 | 本文§3.3 | int_channel.csv[intensity_r_lightonly] | 個体平均の平均 | ✓ |
 | 0.6382 | SM Table S5 | TableS3.csv[State F1]（260626_ch8 の行） | セル値 | ✓ |
 | 0.6444 | SM Table S5 | TableS3.csv[State F1]（260626_ch7 の行） | セル値 | ✓ |
-| 0.649 | 本文 Table 3, SM Text S2.5 | int_channel.csv[pir_active_rate] | 生値（260706_ch5、0.6490） | ✓ |
+| 0.649 | 本文 Table 3 | int_channel.csv[pir_active_rate] | 生値（260706_ch5、0.6490） | ✓ |
 | 0.6490 | 本文§3.6, SM Table S5, SM Text S2.5, SM Text S2.7 | TableS3.csv[par]（260706_ch5 の行） | セル値 | ✓ |
 | 0.65 | SM Table S6 | TableS1.csv[good definition (state F1 >=)]（0.65 の行） | セル値 | ✓ |
 | 0.6516 | 本文§3.4, 本文§3.5, SM Table S2 | TableS6.csv[95% CI lower]（State F1 (all channels) の行） | セル値 | ✓ |
@@ -178,7 +177,6 @@ pairs, folds) and integer percentages are not listed. Judgement: ✓ source conf
 | 0.6709 | 本文 Table 2 | int_permouse_values.csv[F1_state] | 生値 | ✓ |
 | 0.6720 | SM Table S4 | TableS4.csv[Detection ratio, block 2 (mid)]（260706 の行） | セル値 | ✓ |
 | 0.6729 | 本文§3.6, SM Figure S4, SM Text S2.5, SM Text S2.7 | int_channel.csv[intensity_r] | 生値（260706_ch5、最小） | ✓ |
-| 0.673 | SM Text S2.5 | int_channel.csv[intensity_r] | 生値（260706_ch5、最小） | ✓ |
 | 0.6760 | 本文 Table 2 | int_mouse.csv[mean_f1] | 生値（mouse_8） | ✓ |
 | 0.6773 | SM Table S5 | TableS3.csv[State F1]（260629_ch5 の行） | セル値 | ✓ |
 | 0.6793 | SM Table S4 | TableS4.csv[Mean of the other recordings]（260626 の行） | セル値 | ✓ |
